@@ -1,4 +1,7 @@
-# Astro Starter Kit: Blog
+# Metaframeworks newsletter website
+
+<details>
+<summary><em>Generated with <a href="https://docs.astro.build/en/install-and-setup/#install-from-the-cli-wizard" target="_blank">the Astro CLI wizard</a></em></summary>
 
 ```sh
 npm create astro@latest -- --template blog
@@ -66,3 +69,5 @@ Check out [our documentation](https://docs.astro.build) or jump into our [Discor
 ## Credit
 
 This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+
+</details>
