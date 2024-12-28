@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import SubscriptionForm from '../components/SubscriptionForm.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
@@ -27,14 +28,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
       <p>
         Every week, we dive into the latest from frameworks like Next.js, Nuxt,
         SvelteKit, Astro, and more. Expect concise, actionable insights, and a
-        sprinkle of community highlights—all delivered straight to your inbox.
+        sprinkle of community highlights — all delivered straight to your inbox.
         We take a sober look at the metaframeworks movement and ecosystem,
         presenting both the positive and negative aspects without strong
-        opinions or judgments. Just sane news and balanced perspectives on
-        everything related to web development.
+        opinions or judgments.
       </p>
 
-      <!-- SUBSCRIPTION FORM HERE -->
+      <SubscriptionForm />
 
       <p>See you in your inbox!</p>
     </main>
