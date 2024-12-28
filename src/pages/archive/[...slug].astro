@@ -1,0 +1,22 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content';
+import { render } from 'astro:content';
+
+import NewsletterIssue from '../../layouts/NewsletterIssue.astro';
+
+export async function getStaticPaths() {
+  const issues = await getCollection('archive');
+  return issues.map((issue) => ({
+    params: { slug: issue.id },
+    props: issue
+  }));
+}
+type Props = CollectionEntry<'archive'>;
+
+const issue = Astro.props;
+const { Content } = await render(issue);
+---
+
+<NewsletterIssue {...issue.data}>
+  <Content />
+</NewsletterIssue>
