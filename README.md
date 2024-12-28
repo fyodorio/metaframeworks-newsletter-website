@@ -1,7 +1,7 @@
 # Metaframeworks newsletter website
 
 <details>
-<summary><em>Generated with <a href="https://docs.astro.build/en/install-and-setup/#install-from-the-cli-wizard" target="_blank">the Astro CLI wizard</a></em></summary>
+<summary><em>Generated with <a href="https://docs.astro.build/en/install-and-setup/#install-from-the-cli-wizard" target="_blank">the Astro CLI wizard</a>. Expand to see the details and guides.</em></summary>
 
 ```sh
 npm create astro@latest -- --template blog
