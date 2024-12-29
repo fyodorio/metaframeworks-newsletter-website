@@ -7,13 +7,15 @@ import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import FormattedDate from '../../components/FormattedDate.astro';
 
-const issues = (await getCollection('archive')).sort((a, b) => {
-  if (b.data.pubDate && a.data.pubDate) {
-    return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
-  } else {
-    return 0;
-  }
-});
+const issues = (await getCollection('archive'))
+  .filter((item) => item.data.published)
+  .sort((a, b) => {
+    if (b.data.pubDate && a.data.pubDate) {
+      return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
+    } else {
+      return 0;
+    }
+  });
 ---
 
 <!doctype html>
