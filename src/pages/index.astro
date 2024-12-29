@@ -27,7 +27,7 @@ const issues = (await getCollection('archive'))
   <body>
     <Header />
     <main>
-      <h1>Welcome 📬</h1>
+      <h1>Welcome</h1>
 
       <p>
         Metaframeworks Weekly is your bite-sized dose of the most important news
@@ -50,13 +50,13 @@ const issues = (await getCollection('archive'))
       <SubscriptionForm />
 
       <section>
-        <h4>Latest newsletter issues</h4>
+        <h2>Latest newsletter issues</h2>
         <ul>
           {
             issues.map((issue) => (
               <li>
                 <a href={`/archive/${issue.id}/`}>
-                  <h5 class="title">{issue.data.title}</h5>
+                  <h3 class="title">{issue.data.title}</h3>
                   <p class="date">
                     {issue.data.pubDate && (
                       <FormattedDate date={issue.data.pubDate} />
@@ -123,5 +123,14 @@ const issues = (await getCollection('archive'))
       width: 100%;
       text-align: center;
     }
+  }
+  h1 {
+    margin-bottom: 32px;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
   }
 </style>
