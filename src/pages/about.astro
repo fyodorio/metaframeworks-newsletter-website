@@ -38,6 +38,26 @@ import Layout from '../layouts/NewsletterIssue.astro';
     <div>Sincerely,</div>
     <a href="https://fyodor.io" target="_blank">Fyodor Hagrid</a>
   </section>
+
+  <hr />
+
+  <section class="disclaimer">
+    <h2>A small disclaimer</h2>
+
+    <p>
+      As a non-native English speaker, I’m doing my best to keep this newsletter
+      error-free, but some quirks might slip through. If you spot any, please
+      don’t hesitate to reply to the newsletter emails — your feedback is not
+      only welcome but greatly appreciated!
+    </p>
+
+    <p>
+      Also, this is my first newsletter, and I’m still figuring out the
+      mechanics of tools like Buttondown. If you have any suggestions or tips to
+      make this experience smoother or more enjoyable, I’m all ears. Let’s make
+      this journey better together! 🚀
+    </p>
+  </section>
 </Layout>
 
 <style>
@@ -45,5 +65,16 @@ import Layout from '../layouts/NewsletterIssue.astro';
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+    margin-bottom: 32px;
+  }
+  .disclaimer {
+    margin-top: 32px;
+  }
+  .disclaimer p {
+    font-style: italic;
+  }
+  h2 {
+    font-size: 1.75rem;
+    margin-bottom: 24px;
   }
 </style>
