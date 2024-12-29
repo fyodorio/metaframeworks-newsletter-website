@@ -77,6 +77,12 @@ select {
   font: inherit;
 }
 
+/* Avoid default rounded corners for inputs on iOS */
+input {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
 /* Make sure textareas without a rows attribute are not tiny */
 textarea:not([rows]) {
   min-height: 10em;
