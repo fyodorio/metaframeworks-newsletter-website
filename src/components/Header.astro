@@ -52,6 +52,7 @@ import { SITE_TITLE } from '../consts';
   h2 {
     margin: 0;
     font-size: 1.5rem;
+    text-wrap: nowrap;
   }
 
   h2 a,
@@ -83,6 +84,10 @@ import { SITE_TITLE } from '../consts';
   @media (max-width: 720px) {
     .social-links {
       display: none;
+    }
+    nav {
+      padding-top: 24px;
+      flex-direction: column;
     }
   }
 </style>
