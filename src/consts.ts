@@ -3,4 +3,4 @@
 
 export const SITE_TITLE = 'Metaframeworks Weekly';
 export const SITE_DESCRIPTION =
-  'The most important news and updates in the world of metaframeworks';
+  'The most important news and updates from the world of metaframeworks';
