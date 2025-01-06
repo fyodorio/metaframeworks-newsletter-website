@@ -15,7 +15,8 @@ const issues = (await getCollection('archive'))
     } else {
       return 0;
     }
-  });
+  })
+  .reverse();
 ---
 
 <!doctype html>
