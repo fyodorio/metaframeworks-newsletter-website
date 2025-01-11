@@ -5,7 +5,12 @@ import { SITE_TITLE } from '../consts';
 
 <header>
   <nav>
-    <h2><a href="/">{SITE_TITLE}</a></h2>
+    <h2>
+      <a class="brand" href="/">
+        <div class="logo">MW</div>
+        {SITE_TITLE}
+      </a>
+    </h2>
     <div class="internal-links">
       <HeaderLink href="/archive">Archive</HeaderLink>
       <HeaderLink href="/about">About</HeaderLink>
@@ -28,7 +33,13 @@ import { SITE_TITLE } from '../consts';
   }
   h2 a,
   h2 a.active {
+    display: flex;
+    align-items: center;
     text-decoration: none;
+    gap: 8px;
+  }
+  .brand {
+    padding: 0 !important;
   }
   nav {
     display: flex;
@@ -60,5 +71,18 @@ import { SITE_TITLE } from '../consts';
       padding-top: 24px;
       flex-direction: column;
     }
+  }
+  .logo {
+    font-family: 'Pixelify Sans', serif !important;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    border: 2px solid black;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 </style>
