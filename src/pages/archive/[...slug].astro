@@ -2,7 +2,7 @@
 import { type CollectionEntry, getCollection } from 'astro:content';
 import { render } from 'astro:content';
 
-import NewsletterIssue from '../../layouts/NewsletterIssue.astro';
+import Layout from '../../layouts/ContentNarrow.astro';
 
 export async function getStaticPaths() {
   const issues = await getCollection('archive');
@@ -17,6 +17,6 @@ const issue = Astro.props;
 const { Content } = await render(issue);
 ---
 
-<NewsletterIssue {...issue.data}>
+<Layout {...issue.data}>
   <Content />
-</NewsletterIssue>
+</Layout>

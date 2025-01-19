@@ -1,24 +1,11 @@
 ---
-import { getCollection } from 'astro:content';
-
-import Layout from '../layouts/NewsletterIssue.astro';
-import FormattedDate from '../components/FormattedDate.astro';
-
-const issues = (await getCollection('archive'))
-  .filter((item) => item.data.published)
-  .sort((a, b) => {
-    if (b.data.pubDate && a.data.pubDate) {
-      return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
-    } else {
-      return 0;
-    }
-  })
-  .slice(0, 3);
+import Layout from '../layouts/ContentNarrow.astro';
 ---
 
 <Layout
   title="404: Page not found"
   description="My metaframework has failed to find the requested page"
+  heroImage="/page-covers/404.png"
 >
   <p>
     Fancy checking out <a href="/archive">the Issue Archive</a> or <a

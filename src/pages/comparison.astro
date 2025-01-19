@@ -1,0 +1,62 @@
+---
+import { getCollection } from 'astro:content';
+
+import WideLayout from '../layouts/ContentWide.astro';
+import Layout from '../layouts/ContentNarrow.astro';
+
+// Fetch the metaframeworks collection
+const metaframeworks = await getCollection('metaframeworks');
+
+// Function to convert camelCase or snake_case to human-readable titles
+const toTitleCase = (str) => {
+  return str
+    .replace(/([A-Z])/g, ' $1') // Add space before capital letters
+    .replace(/_/g, ' ') // Replace underscores with spaces
+    .replace(/\./g, ' ') // Replace dots with spaces
+    .trim() // Remove leading/trailing spaces
+    .replace(/^\w/, (c) => c.toUpperCase()); // Capitalize the first letter
+};
+
+// Extract field names from the first entry (assuming all entries have the same structure)
+const fieldNames = Object.keys(metaframeworks[0]?.data || {}).filter(
+  (item) => item !== 'id' && item !== 'description'
+);
+---
+
+<WideLayout
+  title="Comparison"
+  description="Features of modern metaframeworks side by side"
+  heroImage="/page-covers/comparison.png"
+>
+  <table>
+    <thead>
+      <tr>
+        {fieldNames.map((field) => <th>{toTitleCase(field)}</th>)}
+      </tr>
+    </thead>
+    <tbody>
+      {
+        metaframeworks.map((framework) => (
+          <tr>
+            {fieldNames.map((field) => {
+              const value = framework.data[field];
+              return (
+                <td>
+                  {Array.isArray(value) ? (
+                    value.join(', ')
+                  ) : field === 'officialSiteUrl' || field === 'gitHubUrl' ? (
+                    <span
+                      set:html={`<a href="${value}" target="_blank">${value}</a>`}
+                    />
+                  ) : (
+                    value
+                  )}
+                </td>
+              );
+            })}
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</WideLayout>

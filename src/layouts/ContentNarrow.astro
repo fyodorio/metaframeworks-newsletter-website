@@ -35,7 +35,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
             <hr />
           </div>
 
-          <section class="issue-content">
+          <section class="content">
             <slot />
           </section>
         </div>
@@ -61,7 +61,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
   .last-updated-on {
     font-style: italic;
   }
-  .issue-content {
+  .content {
     margin-top: 3rem;
   }
   @media (max-width: 720px) {
