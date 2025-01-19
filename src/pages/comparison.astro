@@ -41,7 +41,32 @@ const fieldNames = Object.keys(metaframeworks[0]?.data || {}).filter(
             {fieldNames.map((field) => {
               const value = framework.data[field];
               return (
-                <td>
+                <td
+                  class:list={[
+                    {
+                      'result-good':
+                        (field === 'enterpriseReadiness' && value === 'High') ||
+                        (field === 'complexityLevel' && value === 'Low') ||
+                        (field === 'scalabilityLevel' && value === 'High') ||
+                        (field === 'bundleSizeLevel' && value === 'Low')
+                    },
+                    {
+                      'result-mediocre':
+                        (field === 'enterpriseReadiness' &&
+                          value === 'Medium') ||
+                        (field === 'complexityLevel' && value === 'Medium') ||
+                        (field === 'scalabilityLevel' && value === 'Medium') ||
+                        (field === 'bundleSizeLevel' && value === 'Medium')
+                    },
+                    {
+                      'result-bad':
+                        (field === 'enterpriseReadiness' && value === 'Low') ||
+                        (field === 'complexityLevel' && value === 'High') ||
+                        (field === 'scalabilityLevel' && value === 'Low') ||
+                        (field === 'bundleSizeLevel' && value === 'High')
+                    }
+                  ]}
+                >
                   {Array.isArray(value) ? (
                     value.join(', ')
                   ) : field === 'officialSite' || field === 'codeRepository' ? (
@@ -60,3 +85,15 @@ const fieldNames = Object.keys(metaframeworks[0]?.data || {}).filter(
     </tbody>
   </table>
 </WideLayout>
+
+<style>
+  .result-good {
+    background-color: #d0edd780;
+  }
+  .result-mediocre {
+    background-color: #fff1ab80;
+  }
+  .result-bad {
+    background-color: #ffb4b480;
+  }
+</style>

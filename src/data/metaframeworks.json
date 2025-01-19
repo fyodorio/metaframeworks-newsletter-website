@@ -285,8 +285,8 @@
     "batteriesIncludedLevel": "High"
   },
   {
-    "id": "Observable Framework",
-    "name": "Observable Framework",
+    "id": "Observable",
+    "name": "Observable",
     "description": "Powerful static-site generator for data apps.",
     "officialSite": "https://observablehq.com",
     "codeRepository": "https://github.com/observablehq/framework",
@@ -402,7 +402,7 @@
     "id": "SvelteKit",
     "name": "SvelteKit",
     "description": "A framework for rapidly developing robust, performant web applications using Svelte.",
-    "officialSite": "https://svelte.dev/docs/kit/introduction",
+    "officialSite": "https://svelte.dev/docs/kit",
     "codeRepository": "https://github.com/sveltejs/kit",
     "runtime": ["Node.js", "Serverless Functions"],
     "bundler": ["Vite"],
@@ -421,7 +421,7 @@
     "id": "TanStack Start",
     "name": "TanStack Start",
     "description": "Full-stack React framework powered by TanStack Router.",
-    "officialSite": "https://tanstack.com/start/latest",
+    "officialSite": "https://tanstack.com/start",
     "codeRepository": "https://github.com/TanStack/router",
     "runtime": ["Node.js"],
     "bundler": ["Vite"],
