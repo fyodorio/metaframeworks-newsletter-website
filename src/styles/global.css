@@ -144,7 +144,9 @@ table {
 }
 
 thead {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid white;
+  background-color: var(--accent);
+  color: white;
 }
 
 tbody > tr {
@@ -153,8 +155,12 @@ tbody > tr {
 
 td,
 th {
-  border-right: 1px solid rgb(var(--gray-light));
   padding: 16px;
+}
+
+td:not(:last-child),
+th:not(:last-child) {
+  border-right: 1px solid rgb(var(--gray-light));
 }
 
 tbody > tr:nth-child(odd) {

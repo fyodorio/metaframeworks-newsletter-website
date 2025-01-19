@@ -31,8 +31,8 @@ const metaframeworks = defineCollection({
     id: z.string(),
     name: z.string(),
     description: z.string(),
-    officialSiteUrl: z.string(),
-    gitHubUrl: z.string(),
+    officialSite: z.string(),
+    codeRepository: z.string(),
     runtime: z.array(
       z.enum(['Node.js', 'Deno', 'Bun', 'Serverless Functions', 'Edge compute'])
     ),

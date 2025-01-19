@@ -44,7 +44,7 @@ const fieldNames = Object.keys(metaframeworks[0]?.data || {}).filter(
                 <td>
                   {Array.isArray(value) ? (
                     value.join(', ')
-                  ) : field === 'officialSiteUrl' || field === 'gitHubUrl' ? (
+                  ) : field === 'officialSite' || field === 'codeRepository' ? (
                     <span
                       set:html={`<a href="${value}" target="_blank">${value}</a>`}
                     />
