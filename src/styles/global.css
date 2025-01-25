@@ -141,6 +141,7 @@ table {
   overflow-x: auto;
   white-space: nowrap;
   border-collapse: collapse;
+  font-size: 1rem;
 }
 
 thead {
@@ -155,7 +156,7 @@ tbody > tr {
 
 td,
 th {
-  padding: 16px;
+  padding: 8px;
 }
 
 td:not(:last-child),
