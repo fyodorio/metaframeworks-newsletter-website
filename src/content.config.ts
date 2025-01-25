@@ -45,7 +45,8 @@ const metaframeworks = defineCollection({
         'Rollup',
         'Parcel',
         'esbuild',
-        'SWC'
+        'SWC',
+        'Bun'
       ])
     ),
     frontendFramework: z.array(
