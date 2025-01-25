@@ -53,8 +53,8 @@ const metaframeworks = defineCollection({
       z.enum(['React', 'Vue', 'Angular', 'Svelte', 'Solid', 'Custom', 'Preact'])
     ),
     templatingLanguage: z.array(z.enum(['JSX', 'TSX', 'DSL'])),
-    routingType: z.array(z.enum(['file-based', 'programmatic'])),
-    serverFramework: z.enum(['Express', 'Nitro', 'Vinxi', 'Custom']),
+    routingType: z.array(z.enum(['file-based', 'programmatic', 'hybrid'])),
+    serverFramework: z.enum(['Express', 'Nitro', 'Vinxi', 'Hono', 'Custom']),
     renderingModes: z.array(z.enum(['SPA', 'SSR', 'SSG', 'Hybrid'])),
     enterpriseReadiness: z.enum(['High', 'Medium', 'Low']),
     complexityLevel: z.enum(['High', 'Medium', 'Low']),
