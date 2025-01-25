@@ -48,7 +48,13 @@ const fieldNames = Object.keys(metaframeworks[0]?.data || {}).filter(
                         (field === 'enterpriseReadiness' && value === 'High') ||
                         (field === 'complexityLevel' && value === 'Low') ||
                         (field === 'scalabilityLevel' && value === 'High') ||
-                        (field === 'bundleSizeLevel' && value === 'Low')
+                        (field === 'bundleSizeLevel' && value === 'Low') ||
+                        (field === 'batteriesIncludedLevel' &&
+                          value === 'High') ||
+                        (field === 'documentationQuality' &&
+                          value === 'High') ||
+                        (field === 'thoughtLeadershipImpact' &&
+                          value === 'High')
                     },
                     {
                       'result-mediocre':
@@ -56,14 +62,24 @@ const fieldNames = Object.keys(metaframeworks[0]?.data || {}).filter(
                           value === 'Medium') ||
                         (field === 'complexityLevel' && value === 'Medium') ||
                         (field === 'scalabilityLevel' && value === 'Medium') ||
-                        (field === 'bundleSizeLevel' && value === 'Medium')
+                        (field === 'bundleSizeLevel' && value === 'Medium') ||
+                        (field === 'batteriesIncludedLevel' &&
+                          value === 'Medium') ||
+                        (field === 'documentationQuality' &&
+                          value === 'Medium') ||
+                        (field === 'thoughtLeadershipImpact' &&
+                          value === 'Medium')
                     },
                     {
                       'result-bad':
                         (field === 'enterpriseReadiness' && value === 'Low') ||
                         (field === 'complexityLevel' && value === 'High') ||
                         (field === 'scalabilityLevel' && value === 'Low') ||
-                        (field === 'bundleSizeLevel' && value === 'High')
+                        (field === 'bundleSizeLevel' && value === 'High') ||
+                        (field === 'batteriesIncludedLevel' &&
+                          value === 'Low') ||
+                        (field === 'documentationQuality' && value === 'Low') ||
+                        (field === 'thoughtLeadershipImpact' && value === 'Low')
                     }
                   ]}
                 >

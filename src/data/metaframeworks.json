@@ -16,7 +16,9 @@
     "complexityLevel": "Low",
     "scalabilityLevel": "High",
     "bundleSizeLevel": "Low",
-    "batteriesIncludedLevel": "Medium"
+    "batteriesIncludedLevel": "Medium",
+    "documentationQuality": "High",
+    "thoughtLeadershipImpact": "Medium"
   },
   {
     "id": "Analog",
@@ -35,7 +37,9 @@
     "complexityLevel": "High",
     "scalabilityLevel": "High",
     "bundleSizeLevel": "Medium",
-    "batteriesIncludedLevel": "Medium"
+    "batteriesIncludedLevel": "Medium",
+    "documentationQuality": "Medium",
+    "thoughtLeadershipImpact": "Low"
   },
   {
     "id": "Astro",
@@ -54,7 +58,9 @@
     "complexityLevel": "Low",
     "scalabilityLevel": "High",
     "bundleSizeLevel": "Low",
-    "batteriesIncludedLevel": "High"
+    "batteriesIncludedLevel": "High",
+    "documentationQuality": "High",
+    "thoughtLeadershipImpact": "High"
   },
   {
     "id": "Bâti",
@@ -73,7 +79,9 @@
     "complexityLevel": "Medium",
     "scalabilityLevel": "Medium",
     "bundleSizeLevel": "Low",
-    "batteriesIncludedLevel": "Medium"
+    "batteriesIncludedLevel": "Medium",
+    "documentationQuality": "Low",
+    "thoughtLeadershipImpact": "Low"
   },
   {
     "id": "Brisa",
@@ -92,7 +100,9 @@
     "complexityLevel": "Low",
     "scalabilityLevel": "Medium",
     "bundleSizeLevel": "Low",
-    "batteriesIncludedLevel": "Medium"
+    "batteriesIncludedLevel": "Medium",
+    "documentationQuality": "Low",
+    "thoughtLeadershipImpact": "Low"
   },
   {
     "id": "Docusaurus",
@@ -111,7 +121,9 @@
     "complexityLevel": "Low",
     "scalabilityLevel": "High",
     "bundleSizeLevel": "Medium",
-    "batteriesIncludedLevel": "High"
+    "batteriesIncludedLevel": "High",
+    "documentationQuality": "High",
+    "thoughtLeadershipImpact": "Medium"
   },
   {
     "id": "Enhance",
@@ -130,7 +142,9 @@
     "complexityLevel": "Low",
     "scalabilityLevel": "Medium",
     "bundleSizeLevel": "Low",
-    "batteriesIncludedLevel": "Low"
+    "batteriesIncludedLevel": "Low",
+    "documentationQuality": "Medium",
+    "thoughtLeadershipImpact": "Low"
   },
   {
     "id": "Fresh",
@@ -149,7 +163,9 @@
     "complexityLevel": "Low",
     "scalabilityLevel": "Medium",
     "bundleSizeLevel": "Low",
-    "batteriesIncludedLevel": "Medium"
+    "batteriesIncludedLevel": "Medium",
+    "documentationQuality": "High",
+    "thoughtLeadershipImpact": "Medium"
   },
   {
     "id": "Gatsby",
@@ -168,7 +184,9 @@
     "complexityLevel": "Medium",
     "scalabilityLevel": "High",
     "bundleSizeLevel": "Medium",
-    "batteriesIncludedLevel": "High"
+    "batteriesIncludedLevel": "High",
+    "documentationQuality": "High",
+    "thoughtLeadershipImpact": "High"
   },
   {
     "id": "Heretic",
@@ -187,7 +205,9 @@
     "complexityLevel": "Medium",
     "scalabilityLevel": "Medium",
     "bundleSizeLevel": "Low",
-    "batteriesIncludedLevel": "Medium"
+    "batteriesIncludedLevel": "Medium",
+    "documentationQuality": "Low",
+    "thoughtLeadershipImpact": "Low"
   },
   {
     "id": "Hono",
@@ -206,7 +226,9 @@
     "complexityLevel": "Medium",
     "scalabilityLevel": "High",
     "bundleSizeLevel": "Low",
-    "batteriesIncludedLevel": "Medium"
+    "batteriesIncludedLevel": "Medium",
+    "documentationQuality": "High",
+    "thoughtLeadershipImpact": "Medium"
   },
   {
     "id": "Inferno",
@@ -225,7 +247,9 @@
     "complexityLevel": "Medium",
     "scalabilityLevel": "High",
     "bundleSizeLevel": "Low",
-    "batteriesIncludedLevel": "Medium"
+    "batteriesIncludedLevel": "Medium",
+    "documentationQuality": "Medium",
+    "thoughtLeadershipImpact": "Low"
   },
   {
     "id": "Meteor",
@@ -244,7 +268,9 @@
     "complexityLevel": "High",
     "scalabilityLevel": "High",
     "bundleSizeLevel": "Medium",
-    "batteriesIncludedLevel": "High"
+    "batteriesIncludedLevel": "High",
+    "documentationQuality": "High",
+    "thoughtLeadershipImpact": "Medium"
   },
   {
     "id": "Next.js",
@@ -263,7 +289,9 @@
     "complexityLevel": "Medium",
     "scalabilityLevel": "High",
     "bundleSizeLevel": "Medium",
-    "batteriesIncludedLevel": "High"
+    "batteriesIncludedLevel": "High",
+    "documentationQuality": "High",
+    "thoughtLeadershipImpact": "High"
   },
   {
     "id": "Nuxt",
@@ -282,7 +310,9 @@
     "complexityLevel": "Medium",
     "scalabilityLevel": "High",
     "bundleSizeLevel": "Medium",
-    "batteriesIncludedLevel": "High"
+    "batteriesIncludedLevel": "High",
+    "documentationQuality": "High",
+    "thoughtLeadershipImpact": "High"
   },
   {
     "id": "Observable",
@@ -301,7 +331,9 @@
     "complexityLevel": "Low",
     "scalabilityLevel": "High",
     "bundleSizeLevel": "Low",
-    "batteriesIncludedLevel": "Medium"
+    "batteriesIncludedLevel": "Medium",
+    "documentationQuality": "High",
+    "thoughtLeadershipImpact": "Medium"
   },
   {
     "id": "Qwik City",
@@ -320,7 +352,9 @@
     "complexityLevel": "Medium",
     "scalabilityLevel": "High",
     "bundleSizeLevel": "Low",
-    "batteriesIncludedLevel": "Medium"
+    "batteriesIncludedLevel": "Medium",
+    "documentationQuality": "High",
+    "thoughtLeadershipImpact": "High"
   },
   {
     "id": "Quasar",
@@ -339,7 +373,9 @@
     "complexityLevel": "Medium",
     "scalabilityLevel": "High",
     "bundleSizeLevel": "Medium",
-    "batteriesIncludedLevel": "High"
+    "batteriesIncludedLevel": "High",
+    "documentationQuality": "High",
+    "thoughtLeadershipImpact": "Medium"
   },
   {
     "id": "RedwoodJS",
@@ -358,7 +394,9 @@
     "complexityLevel": "Medium",
     "scalabilityLevel": "High",
     "bundleSizeLevel": "Medium",
-    "batteriesIncludedLevel": "High"
+    "batteriesIncludedLevel": "High",
+    "documentationQuality": "High",
+    "thoughtLeadershipImpact": "Medium"
   },
   {
     "id": "Remix",
@@ -377,7 +415,9 @@
     "complexityLevel": "Medium",
     "scalabilityLevel": "High",
     "bundleSizeLevel": "Low",
-    "batteriesIncludedLevel": "Medium"
+    "batteriesIncludedLevel": "Medium",
+    "documentationQuality": "High",
+    "thoughtLeadershipImpact": "High"
   },
   {
     "id": "SolidStart",
@@ -396,7 +436,9 @@
     "complexityLevel": "Medium",
     "scalabilityLevel": "High",
     "bundleSizeLevel": "Low",
-    "batteriesIncludedLevel": "Medium"
+    "batteriesIncludedLevel": "Medium",
+    "documentationQuality": "Medium",
+    "thoughtLeadershipImpact": "Medium"
   },
   {
     "id": "SvelteKit",
@@ -415,7 +457,9 @@
     "complexityLevel": "Low",
     "scalabilityLevel": "High",
     "bundleSizeLevel": "Low",
-    "batteriesIncludedLevel": "High"
+    "batteriesIncludedLevel": "High",
+    "documentationQuality": "High",
+    "thoughtLeadershipImpact": "High"
   },
   {
     "id": "TanStack Start",
@@ -434,7 +478,9 @@
     "complexityLevel": "Medium",
     "scalabilityLevel": "High",
     "bundleSizeLevel": "Low",
-    "batteriesIncludedLevel": "Medium"
+    "batteriesIncludedLevel": "Medium",
+    "documentationQuality": "Medium",
+    "thoughtLeadershipImpact": "Medium"
   },
   {
     "id": "Vike",
@@ -453,7 +499,9 @@
     "complexityLevel": "Medium",
     "scalabilityLevel": "High",
     "bundleSizeLevel": "Low",
-    "batteriesIncludedLevel": "Medium"
+    "batteriesIncludedLevel": "Medium",
+    "documentationQuality": "Medium",
+    "thoughtLeadershipImpact": "Low"
   },
   {
     "id": "VitePress",
@@ -472,7 +520,9 @@
     "complexityLevel": "Low",
     "scalabilityLevel": "High",
     "bundleSizeLevel": "Low",
-    "batteriesIncludedLevel": "Medium"
+    "batteriesIncludedLevel": "Medium",
+    "documentationQuality": "High",
+    "thoughtLeadershipImpact": "Medium"
   },
   {
     "id": "Waku",
@@ -491,6 +541,8 @@
     "complexityLevel": "Medium",
     "scalabilityLevel": "High",
     "bundleSizeLevel": "Low",
-    "batteriesIncludedLevel": "Medium"
+    "batteriesIncludedLevel": "Medium",
+    "documentationQuality": "Medium",
+    "thoughtLeadershipImpact": "Low"
   }
 ]

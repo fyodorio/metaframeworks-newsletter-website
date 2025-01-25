@@ -59,7 +59,9 @@ const metaframeworks = defineCollection({
     complexityLevel: z.enum(['High', 'Medium', 'Low']),
     scalabilityLevel: z.enum(['High', 'Medium', 'Low']),
     bundleSizeLevel: z.enum(['High', 'Medium', 'Low']),
-    batteriesIncludedLevel: z.enum(['High', 'Medium', 'Low'])
+    batteriesIncludedLevel: z.enum(['High', 'Medium', 'Low']),
+    documentationQuality: z.enum(['High', 'Medium', 'Low']),
+    thoughtLeadershipImpact: z.enum(['High', 'Medium', 'Low'])
   })
 });
 
