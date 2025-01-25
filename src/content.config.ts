@@ -50,7 +50,7 @@ const metaframeworks = defineCollection({
       ])
     ),
     frontendFramework: z.array(
-      z.enum(['React', 'Vue', 'Angular', 'Svelte', 'Solid', 'Custom'])
+      z.enum(['React', 'Vue', 'Angular', 'Svelte', 'Solid', 'Custom', 'Preact'])
     ),
     templatingLanguage: z.array(z.enum(['JSX', 'TSX', 'DSL'])),
     routingType: z.array(z.enum(['file-based', 'programmatic'])),
