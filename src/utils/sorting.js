@@ -22,7 +22,7 @@ const updateSortDirection = (field) => {
 const updateSortIcons = (field) => {
   document.querySelectorAll('.sort-icon').forEach((icon) => {
     icon.innerHTML = `<svg class="sort-default" viewBox="0 0 24 24" width="1em" height="1em">
-      <path fill="currentColor" d="M12 3.67l5 5-1.41 1.41L13 7.5V17h-2V7.5L8.41 10.08 7 8.67l5-5M12 20.33l-5-5 1.41-1.41L11 16.5V7h2v9.5l2.59-2.58L17 15.33l-5 5z"/>
+      <path fill="rgba(255, 255, 255, 0.6)" d="M12 3.67l5 5-1.41 1.41L13 7.5V17h-2V7.5L8.41 10.08 7 8.67l5-5M12 20.33l-5-5 1.41-1.41L11 16.5V7h2v9.5l2.59-2.58L17 15.33l-5 5z"/>
     </svg>`;
   });
 
@@ -33,10 +33,10 @@ const updateSortIcons = (field) => {
       icon.innerHTML =
         currentSort.direction === 'asc'
           ? `<svg class="sort-asc" viewBox="0 0 24 24" width="1em" height="1em">
-              <path fill="currentColor" d="M12 3.67l5 5-1.41 1.41L13 7.5V17h-2V7.5L8.41 10.08 7 8.67l5-5z"/>
+              <path fill="white" d="M12 3.67l5 5-1.41 1.41L13 7.5V17h-2V7.5L8.41 10.08 7 8.67l5-5z"/>
             </svg>`
           : `<svg class="sort-desc" viewBox="0 0 24 24" width="1em" height="1em">
-              <path fill="currentColor" d="M12 20.33l-5-5 1.41-1.41L11 16.5V7h2v9.5l2.59-2.58L17 15.33l-5 5z"/>
+              <path fill="white" d="M12 20.33l-5-5 1.41-1.41L11 16.5V7h2v9.5l2.59-2.58L17 15.33l-5 5z"/>
             </svg>`;
     }
   }
