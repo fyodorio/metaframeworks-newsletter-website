@@ -28,85 +28,93 @@ const fieldNames = Object.keys(metaframeworks[0]?.data || {}).filter(
   description="Features of modern metaframeworks side by side"
   heroImage="/page-covers/comparison.png"
 >
-  <table id="comparison-table">
-    <thead>
-      <tr>
+  <div class="table-container">
+    <table id="comparison-table">
+      <thead>
+        <tr>
+          {
+            fieldNames.map((field) => (
+              <th data-field={field} class="sortable">
+                {toTitleCase(field)}
+                <span class="sort-icon">↕</span>
+              </th>
+            ))
+          }
+        </tr>
+      </thead>
+      <tbody>
         {
-          fieldNames.map((field) => (
-            <th data-field={field} class="sortable">
-              {toTitleCase(field)}
-              <span class="sort-icon">↕</span>
-            </th>
+          metaframeworks.map((framework) => (
+            <tr>
+              {fieldNames.map((field) => {
+                const value = framework.data[field];
+                return (
+                  <td
+                    class:list={[
+                      {
+                        'result-good':
+                          (field === 'enterpriseReadiness' &&
+                            value === 'High') ||
+                          (field === 'complexityLevel' && value === 'Low') ||
+                          (field === 'scalabilityLevel' && value === 'High') ||
+                          (field === 'bundleSizeLevel' && value === 'Low') ||
+                          (field === 'batteriesIncludedLevel' &&
+                            value === 'High') ||
+                          (field === 'documentationQuality' &&
+                            value === 'High') ||
+                          (field === 'thoughtLeadershipImpact' &&
+                            value === 'High')
+                      },
+                      {
+                        'result-mediocre':
+                          (field === 'enterpriseReadiness' &&
+                            value === 'Medium') ||
+                          (field === 'complexityLevel' && value === 'Medium') ||
+                          (field === 'scalabilityLevel' &&
+                            value === 'Medium') ||
+                          (field === 'bundleSizeLevel' && value === 'Medium') ||
+                          (field === 'batteriesIncludedLevel' &&
+                            value === 'Medium') ||
+                          (field === 'documentationQuality' &&
+                            value === 'Medium') ||
+                          (field === 'thoughtLeadershipImpact' &&
+                            value === 'Medium')
+                      },
+                      {
+                        'result-bad':
+                          (field === 'enterpriseReadiness' &&
+                            value === 'Low') ||
+                          (field === 'complexityLevel' && value === 'High') ||
+                          (field === 'scalabilityLevel' && value === 'Low') ||
+                          (field === 'bundleSizeLevel' && value === 'High') ||
+                          (field === 'batteriesIncludedLevel' &&
+                            value === 'Low') ||
+                          (field === 'documentationQuality' &&
+                            value === 'Low') ||
+                          (field === 'thoughtLeadershipImpact' &&
+                            value === 'Low')
+                      }
+                    ]}
+                  >
+                    {Array.isArray(value) ? (
+                      value.join(', ')
+                    ) : field === 'officialSite' ||
+                      field === 'codeRepository' ? (
+                      <span
+                        set:html={`<a href="${value}" target="_blank">${value}</a>`}
+                      />
+                    ) : (
+                      value
+                    )}
+                  </td>
+                );
+              })}
+            </tr>
           ))
         }
-      </tr>
-    </thead>
-    <tbody>
-      {
-        metaframeworks.map((framework) => (
-          <tr>
-            {fieldNames.map((field) => {
-              const value = framework.data[field];
-              return (
-                <td
-                  class:list={[
-                    {
-                      'result-good':
-                        (field === 'enterpriseReadiness' && value === 'High') ||
-                        (field === 'complexityLevel' && value === 'Low') ||
-                        (field === 'scalabilityLevel' && value === 'High') ||
-                        (field === 'bundleSizeLevel' && value === 'Low') ||
-                        (field === 'batteriesIncludedLevel' &&
-                          value === 'High') ||
-                        (field === 'documentationQuality' &&
-                          value === 'High') ||
-                        (field === 'thoughtLeadershipImpact' &&
-                          value === 'High')
-                    },
-                    {
-                      'result-mediocre':
-                        (field === 'enterpriseReadiness' &&
-                          value === 'Medium') ||
-                        (field === 'complexityLevel' && value === 'Medium') ||
-                        (field === 'scalabilityLevel' && value === 'Medium') ||
-                        (field === 'bundleSizeLevel' && value === 'Medium') ||
-                        (field === 'batteriesIncludedLevel' &&
-                          value === 'Medium') ||
-                        (field === 'documentationQuality' &&
-                          value === 'Medium') ||
-                        (field === 'thoughtLeadershipImpact' &&
-                          value === 'Medium')
-                    },
-                    {
-                      'result-bad':
-                        (field === 'enterpriseReadiness' && value === 'Low') ||
-                        (field === 'complexityLevel' && value === 'High') ||
-                        (field === 'scalabilityLevel' && value === 'Low') ||
-                        (field === 'bundleSizeLevel' && value === 'High') ||
-                        (field === 'batteriesIncludedLevel' &&
-                          value === 'Low') ||
-                        (field === 'documentationQuality' && value === 'Low') ||
-                        (field === 'thoughtLeadershipImpact' && value === 'Low')
-                    }
-                  ]}
-                >
-                  {Array.isArray(value) ? (
-                    value.join(', ')
-                  ) : field === 'officialSite' || field === 'codeRepository' ? (
-                    <span
-                      set:html={`<a href="${value}" target="_blank">${value}</a>`}
-                    />
-                  ) : (
-                    value
-                  )}
-                </td>
-              );
-            })}
-          </tr>
-        ))
-      }
-    </tbody>
-  </table>
+      </tbody>
+    </table>
+  </div>
 
   <script>
     import { initializeSort } from '../utils/sorting.js';
@@ -115,6 +123,37 @@ const fieldNames = Object.keys(metaframeworks[0]?.data || {}).filter(
 </WideLayout>
 
 <style>
+  .table-container {
+    position: relative;
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  /* Sticky first column */
+  #comparison-table th:first-child,
+  #comparison-table td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+  }
+
+  /* White background for header */
+  #comparison-table th:first-child {
+    background-color: var(--accent);
+    z-index: 2;
+  }
+
+  /* White background for odd rows */
+  #comparison-table tbody > tr:nth-child(odd) td:first-child {
+    background-color: #f9f9f9;
+  }
+
+  /* White background for even rows */
+  #comparison-table tbody > tr:nth-child(even) td:first-child {
+    background-color: white;
+  }
+
+  /* Result colors (unchanged) */
   .result-good {
     background-color: #d0edd780;
   }
@@ -155,5 +194,18 @@ const fieldNames = Object.keys(metaframeworks[0]?.data || {}).filter(
   .sort-asc,
   .sort-desc {
     opacity: 1 !important;
+  }
+
+  /* Add a subtle shadow to indicate scrolling */
+  #comparison-table td:first-child::after,
+  #comparison-table th:first-child::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -5px;
+    height: 100%;
+    width: 5px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.1), transparent);
+    pointer-events: none; /* Ensure the shadow doesn't interfere with interactions */
   }
 </style>
