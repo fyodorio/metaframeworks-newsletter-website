@@ -28,10 +28,17 @@ const fieldNames = Object.keys(metaframeworks[0]?.data || {}).filter(
   description="Features of modern metaframeworks side by side"
   heroImage="/page-covers/comparison.png"
 >
-  <table>
+  <table id="comparison-table">
     <thead>
       <tr>
-        {fieldNames.map((field) => <th>{toTitleCase(field)}</th>)}
+        {
+          fieldNames.map((field) => (
+            <th data-field={field} class="sortable">
+              {toTitleCase(field)}
+              <span class="sort-icon">↕</span>
+            </th>
+          ))
+        }
       </tr>
     </thead>
     <tbody>
@@ -100,6 +107,11 @@ const fieldNames = Object.keys(metaframeworks[0]?.data || {}).filter(
       }
     </tbody>
   </table>
+
+  <script>
+    import { initializeSort } from '../utils/sorting.js';
+    initializeSort();
+  </script>
 </WideLayout>
 
 <style>
@@ -111,5 +123,37 @@ const fieldNames = Object.keys(metaframeworks[0]?.data || {}).filter(
   }
   .result-bad {
     background-color: #ffb4b480;
+  }
+
+  .sortable {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .sortable:hover {
+    background-color: rgba(var(--gray), 0.1);
+  }
+
+  .sort-icon {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 0.5em;
+    height: 1em;
+    width: 1em;
+    vertical-align: middle;
+  }
+
+  .sort-icon svg {
+    opacity: 0.5;
+    transition: opacity 0.2s;
+  }
+
+  .sortable:hover .sort-icon svg {
+    opacity: 0.8;
+  }
+
+  .sort-asc,
+  .sort-desc {
+    opacity: 1 !important;
   }
 </style>
