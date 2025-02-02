@@ -1,8 +1,9 @@
 {
   "name": "metaframeworks-newsletter-website",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "scripts": {
+    "start": "npm run dev",
     "dev": "astro dev",
     "dev:expose": "astro dev --host",
     "build": "astro build",
@@ -11,10 +12,10 @@
     "format": "prettier --write \"src/**/*.{css,js,ts,astro}\""
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.0.3",
-    "@astrojs/rss": "^4.0.10",
+    "@astrojs/mdx": "^4.0.8",
+    "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.2.1",
-    "astro": "^5.1.1"
+    "astro": "^5.2.3"
   },
   "devDependencies": {
     "prettier": "^3.4.2",
