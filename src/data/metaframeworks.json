@@ -18,7 +18,8 @@
     "bundleSizeLevel": "Low",
     "batteriesIncludedLevel": "Medium",
     "documentationQuality": "High",
-    "thoughtLeadershipImpact": "Medium"
+    "thoughtLeadershipImpact": "Medium",
+    "securityByDefaultLevel": "Medium"
   },
   {
     "id": "Analog",
@@ -31,7 +32,7 @@
     "frontendFramework": ["Angular"],
     "templatingLanguage": ["DSL"],
     "routingType": ["file-based"],
-    "serverFramework": "Nitro",
+    "serverFramework": "Fetch API",
     "renderingModes": ["SSR", "SSG", "Hybrid"],
     "enterpriseReadiness": "Medium",
     "complexityLevel": "High",
@@ -39,7 +40,8 @@
     "bundleSizeLevel": "Medium",
     "batteriesIncludedLevel": "Medium",
     "documentationQuality": "Medium",
-    "thoughtLeadershipImpact": "Low"
+    "thoughtLeadershipImpact": "Low",
+    "securityByDefaultLevel": "Medium"
   },
   {
     "id": "Astro",
@@ -52,7 +54,7 @@
     "frontendFramework": ["React", "Vue", "Svelte", "Solid", "Custom"],
     "templatingLanguage": ["JSX", "TSX", "DSL"],
     "routingType": ["file-based", "hybrid"],
-    "serverFramework": "Custom",
+    "serverFramework": "Fetch API",
     "renderingModes": ["SSG", "Hybrid"],
     "enterpriseReadiness": "Medium",
     "complexityLevel": "Low",
@@ -60,7 +62,8 @@
     "bundleSizeLevel": "Low",
     "batteriesIncludedLevel": "High",
     "documentationQuality": "High",
-    "thoughtLeadershipImpact": "High"
+    "thoughtLeadershipImpact": "High",
+    "securityByDefaultLevel": "High"
   },
   {
     "id": "Bâti",
@@ -73,7 +76,7 @@
     "frontendFramework": ["React", "Vue", "Svelte", "Custom"],
     "templatingLanguage": ["JSX", "TSX", "DSL"],
     "routingType": ["file-based"],
-    "serverFramework": "Custom",
+    "serverFramework": "Fetch API",
     "renderingModes": ["SSR", "SSG", "Hybrid"],
     "enterpriseReadiness": "Low",
     "complexityLevel": "Medium",
@@ -81,7 +84,8 @@
     "bundleSizeLevel": "Low",
     "batteriesIncludedLevel": "Medium",
     "documentationQuality": "Low",
-    "thoughtLeadershipImpact": "Low"
+    "thoughtLeadershipImpact": "Low",
+    "securityByDefaultLevel": "Low"
   },
   {
     "id": "Brisa",
@@ -94,7 +98,7 @@
     "frontendFramework": ["Custom"],
     "templatingLanguage": ["DSL"],
     "routingType": ["file-based"],
-    "serverFramework": "Custom",
+    "serverFramework": "Fetch API",
     "renderingModes": ["SSR", "Hybrid"],
     "enterpriseReadiness": "Low",
     "complexityLevel": "Low",
@@ -102,7 +106,8 @@
     "bundleSizeLevel": "Low",
     "batteriesIncludedLevel": "Medium",
     "documentationQuality": "Low",
-    "thoughtLeadershipImpact": "Low"
+    "thoughtLeadershipImpact": "Low",
+    "securityByDefaultLevel": "Medium"
   },
   {
     "id": "Docusaurus",
@@ -123,7 +128,8 @@
     "bundleSizeLevel": "Medium",
     "batteriesIncludedLevel": "High",
     "documentationQuality": "High",
-    "thoughtLeadershipImpact": "Medium"
+    "thoughtLeadershipImpact": "Medium",
+    "securityByDefaultLevel": "High"
   },
   {
     "id": "Enhance",
@@ -136,7 +142,7 @@
     "frontendFramework": ["Custom"],
     "templatingLanguage": ["DSL"],
     "routingType": ["file-based"],
-    "serverFramework": "Custom",
+    "serverFramework": "Fetch API",
     "renderingModes": ["SSR", "Hybrid"],
     "enterpriseReadiness": "Low",
     "complexityLevel": "Low",
@@ -144,7 +150,8 @@
     "bundleSizeLevel": "Low",
     "batteriesIncludedLevel": "Low",
     "documentationQuality": "Medium",
-    "thoughtLeadershipImpact": "Low"
+    "thoughtLeadershipImpact": "Low",
+    "securityByDefaultLevel": "Medium"
   },
   {
     "id": "Fresh",
@@ -157,7 +164,7 @@
     "frontendFramework": ["Preact"],
     "templatingLanguage": ["JSX", "TSX"],
     "routingType": ["file-based"],
-    "serverFramework": "Custom",
+    "serverFramework": "Fetch API",
     "renderingModes": ["SSR", "Hybrid"],
     "enterpriseReadiness": "Low",
     "complexityLevel": "Low",
@@ -165,7 +172,8 @@
     "bundleSizeLevel": "Low",
     "batteriesIncludedLevel": "Medium",
     "documentationQuality": "High",
-    "thoughtLeadershipImpact": "Medium"
+    "thoughtLeadershipImpact": "Medium",
+    "securityByDefaultLevel": "High"
   },
   {
     "id": "Gatsby",
@@ -186,7 +194,8 @@
     "bundleSizeLevel": "Medium",
     "batteriesIncludedLevel": "High",
     "documentationQuality": "High",
-    "thoughtLeadershipImpact": "High"
+    "thoughtLeadershipImpact": "High",
+    "securityByDefaultLevel": "High"
   },
   {
     "id": "Heretic",
@@ -199,7 +208,7 @@
     "frontendFramework": ["Custom"],
     "templatingLanguage": ["DSL"],
     "routingType": ["file-based"],
-    "serverFramework": "Custom",
+    "serverFramework": "Fetch API",
     "renderingModes": ["SSR", "SPA"],
     "enterpriseReadiness": "Low",
     "complexityLevel": "Medium",
@@ -207,7 +216,8 @@
     "bundleSizeLevel": "Low",
     "batteriesIncludedLevel": "Medium",
     "documentationQuality": "Low",
-    "thoughtLeadershipImpact": "Low"
+    "thoughtLeadershipImpact": "Low",
+    "securityByDefaultLevel": "Low"
   },
   {
     "id": "Hono",
@@ -228,7 +238,8 @@
     "bundleSizeLevel": "Low",
     "batteriesIncludedLevel": "Medium",
     "documentationQuality": "High",
-    "thoughtLeadershipImpact": "Medium"
+    "thoughtLeadershipImpact": "Medium",
+    "securityByDefaultLevel": "High"
   },
   {
     "id": "Inferno",
@@ -249,7 +260,8 @@
     "bundleSizeLevel": "Low",
     "batteriesIncludedLevel": "Medium",
     "documentationQuality": "Medium",
-    "thoughtLeadershipImpact": "Low"
+    "thoughtLeadershipImpact": "Low",
+    "securityByDefaultLevel": "Medium"
   },
   {
     "id": "Meteor",
@@ -270,7 +282,8 @@
     "bundleSizeLevel": "Medium",
     "batteriesIncludedLevel": "High",
     "documentationQuality": "High",
-    "thoughtLeadershipImpact": "Medium"
+    "thoughtLeadershipImpact": "Medium",
+    "securityByDefaultLevel": "High"
   },
   {
     "id": "Next.js",
@@ -283,7 +296,7 @@
     "frontendFramework": ["React"],
     "templatingLanguage": ["JSX", "TSX"],
     "routingType": ["file-based", "hybrid"],
-    "serverFramework": "Custom",
+    "serverFramework": "Fetch API",
     "renderingModes": ["SSR", "SSG", "Hybrid"],
     "enterpriseReadiness": "High",
     "complexityLevel": "Medium",
@@ -291,7 +304,8 @@
     "bundleSizeLevel": "Medium",
     "batteriesIncludedLevel": "High",
     "documentationQuality": "High",
-    "thoughtLeadershipImpact": "High"
+    "thoughtLeadershipImpact": "High",
+    "securityByDefaultLevel": "High"
   },
   {
     "id": "Nuxt",
@@ -312,7 +326,8 @@
     "bundleSizeLevel": "Medium",
     "batteriesIncludedLevel": "High",
     "documentationQuality": "High",
-    "thoughtLeadershipImpact": "High"
+    "thoughtLeadershipImpact": "High",
+    "securityByDefaultLevel": "High"
   },
   {
     "id": "Observable",
@@ -333,7 +348,8 @@
     "bundleSizeLevel": "Low",
     "batteriesIncludedLevel": "Medium",
     "documentationQuality": "High",
-    "thoughtLeadershipImpact": "Medium"
+    "thoughtLeadershipImpact": "Medium",
+    "securityByDefaultLevel": "Medium"
   },
   {
     "id": "Qwik City",
@@ -346,7 +362,7 @@
     "frontendFramework": ["Custom"],
     "templatingLanguage": ["JSX", "TSX"],
     "routingType": ["file-based", "hybrid"],
-    "serverFramework": "Custom",
+    "serverFramework": "Fetch API",
     "renderingModes": ["SSR", "SSG", "Hybrid"],
     "enterpriseReadiness": "Medium",
     "complexityLevel": "Medium",
@@ -354,7 +370,8 @@
     "bundleSizeLevel": "Low",
     "batteriesIncludedLevel": "Medium",
     "documentationQuality": "High",
-    "thoughtLeadershipImpact": "High"
+    "thoughtLeadershipImpact": "High",
+    "securityByDefaultLevel": "High"
   },
   {
     "id": "Quasar",
@@ -375,7 +392,8 @@
     "bundleSizeLevel": "Medium",
     "batteriesIncludedLevel": "High",
     "documentationQuality": "High",
-    "thoughtLeadershipImpact": "Medium"
+    "thoughtLeadershipImpact": "Medium",
+    "securityByDefaultLevel": "High"
   },
   {
     "id": "RedwoodJS",
@@ -388,7 +406,7 @@
     "frontendFramework": ["React"],
     "templatingLanguage": ["JSX", "TSX"],
     "routingType": ["file-based", "hybrid"],
-    "serverFramework": "Custom",
+    "serverFramework": "Fetch API",
     "renderingModes": ["SSR", "SSG", "Hybrid"],
     "enterpriseReadiness": "Medium",
     "complexityLevel": "Medium",
@@ -396,7 +414,8 @@
     "bundleSizeLevel": "Medium",
     "batteriesIncludedLevel": "High",
     "documentationQuality": "High",
-    "thoughtLeadershipImpact": "Medium"
+    "thoughtLeadershipImpact": "Medium",
+    "securityByDefaultLevel": "High"
   },
   {
     "id": "Remix",
@@ -409,7 +428,7 @@
     "frontendFramework": ["React"],
     "templatingLanguage": ["JSX", "TSX"],
     "routingType": ["hybrid"],
-    "serverFramework": "Express",
+    "serverFramework": "Fetch API",
     "renderingModes": ["SSR", "Hybrid"],
     "enterpriseReadiness": "High",
     "complexityLevel": "Medium",
@@ -417,7 +436,8 @@
     "bundleSizeLevel": "Low",
     "batteriesIncludedLevel": "Medium",
     "documentationQuality": "High",
-    "thoughtLeadershipImpact": "High"
+    "thoughtLeadershipImpact": "High",
+    "securityByDefaultLevel": "High"
   },
   {
     "id": "SolidStart",
@@ -438,7 +458,8 @@
     "bundleSizeLevel": "Low",
     "batteriesIncludedLevel": "Medium",
     "documentationQuality": "Medium",
-    "thoughtLeadershipImpact": "Medium"
+    "thoughtLeadershipImpact": "Medium",
+    "securityByDefaultLevel": "Medium"
   },
   {
     "id": "SvelteKit",
@@ -451,7 +472,7 @@
     "frontendFramework": ["Svelte"],
     "templatingLanguage": ["DSL"],
     "routingType": ["file-based", "hybrid"],
-    "serverFramework": "Custom",
+    "serverFramework": "Fetch API",
     "renderingModes": ["SSR", "SSG", "Hybrid"],
     "enterpriseReadiness": "Medium",
     "complexityLevel": "Low",
@@ -459,7 +480,8 @@
     "bundleSizeLevel": "Low",
     "batteriesIncludedLevel": "High",
     "documentationQuality": "High",
-    "thoughtLeadershipImpact": "High"
+    "thoughtLeadershipImpact": "High",
+    "securityByDefaultLevel": "High"
   },
   {
     "id": "TanStack Start",
@@ -480,7 +502,8 @@
     "bundleSizeLevel": "Low",
     "batteriesIncludedLevel": "Medium",
     "documentationQuality": "Medium",
-    "thoughtLeadershipImpact": "Medium"
+    "thoughtLeadershipImpact": "Medium",
+    "securityByDefaultLevel": "Medium"
   },
   {
     "id": "Vike",
@@ -493,7 +516,7 @@
     "frontendFramework": ["React", "Vue", "Svelte", "Custom"],
     "templatingLanguage": ["JSX", "TSX", "DSL"],
     "routingType": ["file-based"],
-    "serverFramework": "Custom",
+    "serverFramework": "Fetch API",
     "renderingModes": ["SSR", "SSG", "Hybrid"],
     "enterpriseReadiness": "Medium",
     "complexityLevel": "Medium",
@@ -501,7 +524,8 @@
     "bundleSizeLevel": "Low",
     "batteriesIncludedLevel": "Medium",
     "documentationQuality": "Medium",
-    "thoughtLeadershipImpact": "Low"
+    "thoughtLeadershipImpact": "Low",
+    "securityByDefaultLevel": "Medium"
   },
   {
     "id": "VitePress",
@@ -522,7 +546,8 @@
     "bundleSizeLevel": "Low",
     "batteriesIncludedLevel": "Medium",
     "documentationQuality": "High",
-    "thoughtLeadershipImpact": "Medium"
+    "thoughtLeadershipImpact": "Medium",
+    "securityByDefaultLevel": "High"
   },
   {
     "id": "Waku",
@@ -535,7 +560,7 @@
     "frontendFramework": ["React"],
     "templatingLanguage": ["JSX", "TSX"],
     "routingType": ["file-based"],
-    "serverFramework": "Custom",
+    "serverFramework": "Fetch API",
     "renderingModes": ["SSR", "Hybrid"],
     "enterpriseReadiness": "Medium",
     "complexityLevel": "Medium",
@@ -543,6 +568,7 @@
     "bundleSizeLevel": "Low",
     "batteriesIncludedLevel": "Medium",
     "documentationQuality": "Medium",
-    "thoughtLeadershipImpact": "Low"
+    "thoughtLeadershipImpact": "Low",
+    "securityByDefaultLevel": "Medium"
   }
 ]

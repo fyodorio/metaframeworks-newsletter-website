@@ -17,6 +17,29 @@ const toTitleCase = (str) => {
     .replace(/^\w/, (c) => c.toUpperCase()); // Capitalize the first letter
 };
 
+// Configuration for field result classes
+const fieldClassConfig = {
+  enterpriseReadiness: { good: 'High', bad: 'Low' },
+  complexityLevel: { good: 'Low', bad: 'High' },
+  scalabilityLevel: { good: 'High', bad: 'Low' },
+  bundleSizeLevel: { good: 'Low', bad: 'High' },
+  batteriesIncludedLevel: { good: 'High', bad: 'Low' },
+  documentationQuality: { good: 'High', bad: 'Low' },
+  thoughtLeadershipImpact: { good: 'High', bad: 'Low' },
+  securityByDefaultLevel: { good: 'High', bad: 'Low' }
+};
+
+// Helper function to determine the result class
+const getResultClass = (field: string, value: string) => {
+  const config = fieldClassConfig[field];
+  if (!config) return '';
+
+  if (value === config.good) return 'result-good';
+  if (value === 'Medium') return 'result-mediocre';
+  if (value === config.bad) return 'result-bad';
+  return '';
+};
+
 // Extract field names from the first entry (assuming all entries have the same structure)
 const fieldNames = Object.keys(metaframeworks[0]?.data || {}).filter(
   (item) => item !== 'id' && item !== 'description'
@@ -61,53 +84,7 @@ const fieldNames = Object.keys(metaframeworks[0]?.data || {}).filter(
               {fieldNames.map((field) => {
                 const value = framework.data[field];
                 return (
-                  <td
-                    class:list={[
-                      {
-                        'result-good':
-                          (field === 'enterpriseReadiness' &&
-                            value === 'High') ||
-                          (field === 'complexityLevel' && value === 'Low') ||
-                          (field === 'scalabilityLevel' && value === 'High') ||
-                          (field === 'bundleSizeLevel' && value === 'Low') ||
-                          (field === 'batteriesIncludedLevel' &&
-                            value === 'High') ||
-                          (field === 'documentationQuality' &&
-                            value === 'High') ||
-                          (field === 'thoughtLeadershipImpact' &&
-                            value === 'High')
-                      },
-                      {
-                        'result-mediocre':
-                          (field === 'enterpriseReadiness' &&
-                            value === 'Medium') ||
-                          (field === 'complexityLevel' && value === 'Medium') ||
-                          (field === 'scalabilityLevel' &&
-                            value === 'Medium') ||
-                          (field === 'bundleSizeLevel' && value === 'Medium') ||
-                          (field === 'batteriesIncludedLevel' &&
-                            value === 'Medium') ||
-                          (field === 'documentationQuality' &&
-                            value === 'Medium') ||
-                          (field === 'thoughtLeadershipImpact' &&
-                            value === 'Medium')
-                      },
-                      {
-                        'result-bad':
-                          (field === 'enterpriseReadiness' &&
-                            value === 'Low') ||
-                          (field === 'complexityLevel' && value === 'High') ||
-                          (field === 'scalabilityLevel' && value === 'Low') ||
-                          (field === 'bundleSizeLevel' && value === 'High') ||
-                          (field === 'batteriesIncludedLevel' &&
-                            value === 'Low') ||
-                          (field === 'documentationQuality' &&
-                            value === 'Low') ||
-                          (field === 'thoughtLeadershipImpact' &&
-                            value === 'Low')
-                      }
-                    ]}
-                  >
+                  <td class={getResultClass(field, value)}>
                     {Array.isArray(value) ? (
                       value.join(', ')
                     ) : field === 'officialSite' ||
@@ -165,7 +142,7 @@ const fieldNames = Object.keys(metaframeworks[0]?.data || {}).filter(
     background-color: white;
   }
 
-  /* Result colors (unchanged) */
+  /* Result colors */
   .result-good {
     background-color: #d0edd780;
   }
@@ -204,6 +181,6 @@ const fieldNames = Object.keys(metaframeworks[0]?.data || {}).filter(
     height: 100%;
     width: 5px;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.1), transparent);
-    pointer-events: none; /* Ensure the shadow doesn't interfere with interactions */
+    pointer-events: none;
   }
 </style>
