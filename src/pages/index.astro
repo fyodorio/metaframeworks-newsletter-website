@@ -7,6 +7,7 @@ import Footer from '../components/Footer.astro';
 import SubscriptionForm from '../components/SubscriptionForm.astro';
 import IssueCard from '../components/IssueCard.astro';
 import FaqSection from '../components/FaqSection.astro';
+import ShowMoreButton from '../components/ShowMoreButton.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 const issues = (await getCollection('archive'))
@@ -68,9 +69,12 @@ const issues = (await getCollection('archive'))
             ))
           }
         </ul>
+        <ShowMoreButton href="/archive" text="Show More Issues" />
       </section>
 
-      <FaqSection featuredOnly={true} showMoreLink={true} />
+      <section>
+        <FaqSection featuredOnly={true} showMoreLink={true} />
+      </section>
     </main>
     <Footer />
   </body>
@@ -78,7 +82,8 @@ const issues = (await getCollection('archive'))
 
 <style>
   section {
-    margin-top: 20px;
+    margin-top: 24px;
+    margin-bottom: 24px;
   }
   ul {
     display: flex;
