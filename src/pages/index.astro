@@ -61,6 +61,7 @@ const issues = (await getCollection('archive'))
                 pubDate={issue.data.pubDate}
                 description={issue.data.description}
                 id={issue.id}
+                tags={issue.data.tags}
                 titleTag="h3"
               />
             ))

@@ -5,10 +5,22 @@ import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import IssueCard from '../../components/IssueCard.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import { SITE_TITLE } from '../../consts';
+
+export async function getStaticPaths() {
+  const tags = await getCollection('tags');
+  return tags.map((tag) => ({
+    params: { tag: tag.data.id },
+    props: { tag }
+  }));
+}
+
+const { tag } = Astro.props;
 
 const issues = (await getCollection('archive'))
-  .filter((item) => item.data.published)
+  .filter(
+    (item) => item.data.published && item.data.tags?.includes(tag.data.id)
+  )
   .sort((a, b) => {
     if (b.data.pubDate && a.data.pubDate) {
       return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
@@ -21,12 +33,15 @@ const issues = (await getCollection('archive'))
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead
+      title={`${tag.data.name} - ${SITE_TITLE}`}
+      description={`Issues tagged with ${tag.data.name}`}
+    />
   </head>
   <body>
     <Header />
     <main>
-      <h1>Archive</h1>
+      <h1>Issues tagged with "{tag.data.name}"</h1>
       <section>
         <ul>
           {
@@ -61,3 +76,4 @@ const issues = (await getCollection('archive'))
     padding: 0;
   }
 </style>
+
