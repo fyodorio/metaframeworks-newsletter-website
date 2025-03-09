@@ -1,4 +1,6 @@
 ---
+import { markdownToHtml } from '../utils/markdown.js';
+
 interface Props {
   question: string;
   answer: string;
@@ -6,6 +8,7 @@ interface Props {
 }
 
 const { question, answer, id } = Astro.props;
+const htmlContent = await markdownToHtml(answer);
 ---
 
 <details {id} class="faq-card">
@@ -44,9 +47,7 @@ const { question, answer, id } = Astro.props;
       </svg>
     </div>
   </summary>
-  <div class="answer">
-    <p>{answer}</p>
-  </div>
+  <div class="answer prose" set:html={htmlContent} />
 </details>
 
 <style>
@@ -98,11 +99,6 @@ const { question, answer, id } = Astro.props;
   }
 
   .answer {
-    padding: 0 0 1.5rem 0;
-  }
-
-  .answer p {
-    margin: 0;
-    line-height: 1.6;
+    color: rgb(var(--accent));
   }
 </style>

@@ -1,6 +1,6 @@
 {
   "id": "content-curation",
   "question": "How do you curate the content?",
-  "answer": "Our content curation process involves monitoring official blogs, social media accounts, GitHub repositories, and community discussions of all major metaframeworks. We prioritize official releases, significant updates, security advisories, and innovative community projects. The goal is to provide a balanced view of the ecosystem without bias toward any particular framework.",
+  "answer": "My content curation process involves monitoring official blogs, social media accounts (Bluesky mostly), GitHub repositories (changelogs and releases), and community discussions (Reddit, Hackernews, etc.) of all major metaframeworks and tools around them. The target topics mostly coincide with the chapter of [the Encyclopedia of Metaframeworks](https://github.com/fyodorio/awesome-metaframeworks). I prioritize official releases, significant updates, security advisories, and innovative community projects. The goal is to provide a balanced view of the ecosystem without bias toward any particular framework or tool, and even any rigid opinions on the metaframeworks approach in general, because the idea is consider it objectively with all the relevant cons and flaws included.",
   "featured": true
 } 
