@@ -1,0 +1,6 @@
+{
+  "id": "content-curation",
+  "question": "How do you curate the content?",
+  "answer": "Our content curation process involves monitoring official blogs, social media accounts, GitHub repositories, and community discussions of all major metaframeworks. We prioritize official releases, significant updates, security advisories, and innovative community projects. The goal is to provide a balanced view of the ecosystem without bias toward any particular framework.",
+  "featured": true
+} 

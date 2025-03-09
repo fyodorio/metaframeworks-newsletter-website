@@ -1,0 +1,38 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FaqSection from '../components/FaqSection.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={`FAQ - ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h1>Frequently Asked Questions</h1>
+      <p class="description">
+        Find answers to the most common questions about Metaframeworks Weekly.
+      </p>
+
+      <FaqSection featuredOnly={false} title="" />
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    margin-bottom: 3rem;
+    color: var(--secondary-text-color);
+    font-size: 1.2rem;
+  }
+</style>

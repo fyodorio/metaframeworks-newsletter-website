@@ -1,0 +1,108 @@
+---
+interface Props {
+  question: string;
+  answer: string;
+  id: string;
+}
+
+const { question, answer, id } = Astro.props;
+---
+
+<details {id} class="faq-card">
+  <summary>
+    {question}
+    <div class="icon-container">
+      <svg
+        class="icon-plus"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 5V19M5 12H19"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>
+      <svg
+        class="icon-minus"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M5 12H19"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>
+    </div>
+  </summary>
+  <div class="answer">
+    <p>{answer}</p>
+  </div>
+</details>
+
+<style>
+  .faq-card {
+    border-bottom: 1px solid var(--border-color);
+    margin: 0;
+    width: 100%;
+  }
+
+  summary {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    font-weight: 600;
+    font-size: 1.25rem;
+    list-style: none;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .icon-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon-plus,
+  .icon-minus {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s ease;
+  }
+
+  .icon-minus {
+    opacity: 0;
+    position: absolute;
+  }
+
+  details[open] .icon-plus {
+    opacity: 0;
+  }
+
+  details[open] .icon-minus {
+    opacity: 1;
+  }
+
+  .answer {
+    padding: 0 0 1.5rem 0;
+  }
+
+  .answer p {
+    margin: 0;
+    line-height: 1.6;
+  }
+</style>

@@ -1,0 +1,87 @@
+---
+import { getCollection } from 'astro:content';
+import FaqCard from './FaqCard.astro';
+
+interface Props {
+  featuredOnly?: boolean;
+  title?: string;
+  showMoreLink?: boolean;
+}
+
+const {
+  featuredOnly = false,
+  title = 'Frequently Asked Questions',
+  showMoreLink = false
+} = Astro.props;
+
+// Type assertion to handle the collection type
+const allFaqs = await getCollection('faqs');
+const faqs = featuredOnly
+  ? allFaqs.filter((faq) => faq.data.featured === true)
+  : allFaqs;
+---
+
+<section class="faq-section">
+  {title && <h2>{title}</h2>}
+  <div class="faq-container">
+    {
+      faqs.map((faq) => (
+        <FaqCard
+          question={faq.data.question}
+          answer={faq.data.answer}
+          id={faq.data.id}
+        />
+      ))
+    }
+  </div>
+
+  {
+    showMoreLink && (
+      <div class="show-more">
+        <a href="/faq" class="show-more-btn">
+          Show More FAQs
+        </a>
+      </div>
+    )
+  }
+</section>
+
+<style>
+  .faq-section {
+    margin: 4rem 0 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    border-top: 1px solid var(--border-color);
+  }
+
+  .show-more {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .show-more-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+
+  .show-more-btn:hover {
+    background-color: var(--hover-bg);
+  }
+</style>

@@ -3,6 +3,7 @@ import { defineCollection, z } from 'astro:content';
 
 import { metaframeworkSchema } from './schemas/metaframework.schema';
 import { tagSchema } from './schemas/tag.schema';
+import { faqSchema } from './schemas/faq.schema';
 
 const archive = defineCollection({
   loader: glob({ base: './src/content/archive', pattern: '**/*.{md,mdx}' }),
@@ -39,9 +40,15 @@ const tags = defineCollection({
   schema: tagSchema
 });
 
+const faqs = defineCollection({
+  loader: glob({ base: './src/content/faqs', pattern: '**/*.json' }),
+  schema: faqSchema
+});
+
 export const collections = {
   archive,
   pages,
   metaframeworks,
-  tags
+  tags,
+  faqs
 };

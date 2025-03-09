@@ -6,6 +6,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import SubscriptionForm from '../components/SubscriptionForm.astro';
 import IssueCard from '../components/IssueCard.astro';
+import FaqSection from '../components/FaqSection.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 const issues = (await getCollection('archive'))
@@ -68,6 +69,8 @@ const issues = (await getCollection('archive'))
           }
         </ul>
       </section>
+
+      <FaqSection featuredOnly={true} showMoreLink={true} />
     </main>
     <Footer />
   </body>
