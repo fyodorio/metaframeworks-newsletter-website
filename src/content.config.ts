@@ -1,5 +1,6 @@
 import { glob, file } from 'astro/loaders';
 import { defineCollection, z } from 'astro:content';
+
 import { metaframeworkSchema } from './schemas/metaframework.schema';
 import { tagSchema } from './schemas/tag.schema';
 

@@ -5,8 +5,8 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import SubscriptionForm from '../components/SubscriptionForm.astro';
+import IssueCard from '../components/IssueCard.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import FormattedDate from '../components/FormattedDate.astro';
 
 const issues = (await getCollection('archive'))
   .filter((item) => item.data.published)
@@ -56,19 +56,13 @@ const issues = (await getCollection('archive'))
         <ul>
           {
             issues.map((issue) => (
-              <li>
-                <a href={`/archive/${issue.id}/`}>
-                  <h3 class="title">{issue.data.title}</h3>
-                  <p class="date">
-                    {issue.data.pubDate && (
-                      <FormattedDate date={issue.data.pubDate} />
-                    )}
-                  </p>
-                  {issue.data.description && (
-                    <p class="description">{issue.data.description}</p>
-                  )}
-                </a>
-              </li>
+              <IssueCard
+                title={issue.data.title}
+                pubDate={issue.data.pubDate}
+                description={issue.data.description}
+                id={issue.id}
+                titleTag="h3"
+              />
             ))
           }
         </ul>
@@ -90,41 +84,7 @@ const issues = (await getCollection('archive'))
     margin: 32px 0 0 0;
     padding: 0;
   }
-  ul li {
-    padding-bottom: 1rem;
-    border-bottom: 1px solid var(--accent);
-  }
-  ul li:last-child {
-    border-bottom: none;
-  }
-  ul li * {
-    text-decoration: none;
-    transition: 0.2s ease;
-  }
-  ul li a {
-    display: block;
-  }
-  .title {
-    margin: 0;
-    color: rgb(var(--black));
-    line-height: 1;
-  }
-  .date,
-  .description {
-    font-weight: normal;
-    margin: 12px 0 0 0;
-    color: rgb(var(--gray));
-  }
-  ul li a:hover h4,
-  ul li a:hover .date,
-  ul li a:hover .description {
-    color: rgb(var(--accent));
-  }
   @media (max-width: 720px) {
-    ul li {
-      width: 100%;
-      text-align: center;
-    }
     main {
       max-width: inherit;
     }
@@ -135,8 +95,5 @@ const issues = (await getCollection('archive'))
   h2 {
     font-size: 2rem;
     text-align: center;
-  }
-  h3 {
-    font-size: 1.5rem;
   }
 </style>

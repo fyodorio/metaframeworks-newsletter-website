@@ -1,0 +1,66 @@
+---
+import FormattedDate from './FormattedDate.astro';
+
+interface Props {
+  title: string;
+  pubDate: Date | undefined;
+  description?: string;
+  id: string;
+  titleTag?: 'h3' | 'h4';
+}
+
+const { title, pubDate, description, id, titleTag = 'h3' } = Astro.props;
+const TitleTag = titleTag;
+---
+
+<li>
+  <a href={`/archive/${id}/`}>
+    <TitleTag class="title">{title}</TitleTag>
+    <p class="date">
+      {pubDate && <FormattedDate date={pubDate} />}
+    </p>
+    {description && <p class="description">{description}</p>}
+  </a>
+</li>
+
+<style>
+  h3 {
+    font-size: 1.5rem;
+  }
+  li {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--accent);
+  }
+  li:last-child {
+    border-bottom: none;
+  }
+  li * {
+    text-decoration: none;
+    transition: 0.2s ease;
+  }
+  li a {
+    display: block;
+  }
+  .title {
+    margin: 0;
+    color: rgb(var(--black));
+    line-height: 1;
+  }
+  .date,
+  .description {
+    font-weight: normal;
+    margin: 12px 0 0 0;
+    color: rgb(var(--gray));
+  }
+  li a:hover .title,
+  li a:hover .date,
+  li a:hover .description {
+    color: rgb(var(--accent));
+  }
+  @media (max-width: 720px) {
+    li {
+      width: 100%;
+      text-align: center;
+    }
+  }
+</style>
