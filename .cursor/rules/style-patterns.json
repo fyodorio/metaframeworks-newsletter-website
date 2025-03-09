@@ -1,0 +1,11 @@
+{
+  "name": "Styling Patterns",
+  "description": "Rules for styling conventions in the project",
+  "patterns": [
+    {
+      "files": ["**/*.astro", "src/styles/*.css"],
+      "rules": ["@.cursor/rules/styling.md"]
+    }
+  ],
+  "priority": 1
+} 
