@@ -1,0 +1,32 @@
+[
+  {
+    "id": "frameworks",
+    "name": "Frameworks",
+    "description": "Articles about web frameworks and libraries",
+    "color": "#3b82f6"
+  },
+  {
+    "id": "performance",
+    "name": "Performance",
+    "description": "Content related to web performance optimization",
+    "color": "#22c55e"
+  },
+  {
+    "id": "tooling",
+    "name": "Tooling",
+    "description": "Development tools and utilities",
+    "color": "#f59e0b"
+  },
+  {
+    "id": "deployment",
+    "name": "Deployment",
+    "description": "Deployment and hosting solutions",
+    "color": "#8b5cf6"
+  },
+  {
+    "id": "security",
+    "name": "Security",
+    "description": "Web security and best practices",
+    "color": "#ef4444"
+  }
+] 

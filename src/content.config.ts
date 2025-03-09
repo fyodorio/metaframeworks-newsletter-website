@@ -1,6 +1,7 @@
 import { glob, file } from 'astro/loaders';
 import { defineCollection, z } from 'astro:content';
 import { metaframeworkSchema } from './schemas/metaframework.schema';
+import { tagSchema } from './schemas/tag.schema';
 
 const archive = defineCollection({
   loader: glob({ base: './src/content/archive', pattern: '**/*.{md,mdx}' }),
@@ -10,7 +11,8 @@ const archive = defineCollection({
     pubDate: z.coerce.date().optional(),
     updatedDate: z.coerce.date().optional(),
     heroImage: z.string().optional(),
-    published: z.boolean().optional()
+    published: z.boolean().optional(),
+    tags: z.array(z.string()).optional()
   })
 });
 
@@ -31,8 +33,14 @@ const metaframeworks = defineCollection({
   schema: metaframeworkSchema
 });
 
+const tags = defineCollection({
+  loader: file('src/data/tags.json'),
+  schema: z.array(tagSchema)
+});
+
 export const collections = {
   archive,
   pages,
-  metaframeworks
+  metaframeworks,
+  tags
 };
