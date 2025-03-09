@@ -91,6 +91,10 @@ const fieldNames = Object.keys(metaframeworks[0]?.data || {}).filter(
                       <span
                         set:html={`<a href="${value}" target="_blank">${value}</a>`}
                       />
+                    ) : field === 'name' && framework.data.tag ? (
+                      <span
+                        set:html={`<a href="/tags/${framework.data.tag}">${value}</a>`}
+                      />
                     ) : (
                       value
                     )}
