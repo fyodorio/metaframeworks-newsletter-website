@@ -34,8 +34,8 @@ const metaframeworks = defineCollection({
 });
 
 const tags = defineCollection({
-  loader: file('src/data/tags.json'),
-  schema: z.array(tagSchema)
+  loader: glob({ base: './src/content/tags', pattern: '**/*.json' }),
+  schema: tagSchema
 });
 
 export const collections = {
