@@ -1,0 +1,6 @@
+{
+  "id": "platform",
+  "question": "Which newsletter platform do you use and why?",
+  "answer": "I use [ButtonDown](https://buttondown.com) (not an ad or affiliation). I found it the easiest, the most customizable (within the limits of default starter pricing), and very developer-friendly and minimalist way to build a newsletter on your website. I don't like shared stuff like SubStack or HashNode as they're too generic and focused on marketing, which is not the main goal of this project. Also I tried to get hands dirty with other alternatives and didn't like them too. So for now I'm pretty happy with my choice.",
+  "featured": false
+}

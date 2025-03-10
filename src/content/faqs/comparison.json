@@ -1,0 +1,6 @@
+{
+  "id": "comparison",
+  "question": "What data is metaframeworks comparison built on?",
+  "answer": "At this stage, I had put into [the Metaframeworks Comparison table](/comparison) the list of metaframeworks (and metaframework-like tools) I had gathered [in the Encyclopedia of Metaframeworks](https://github.com/fyodorio/awesome-metaframeworks?tab=readme-ov-file#metaframeworks). The table consists both of the objective information (like websites and some technical stack parts) and of some subjective (and a bit opinionated, I accept that) facts and characteristics (like complexity or enterprise-readiness, for instance). I'm open to constructive criticism, corrections, and suggestions about that, as I consider this comparison to be a community-driven project. So feel free to [jump in](https://github.com/fyodorio/metaframeworks-newsletter-website/issues) and suggest anything, you are absolutely welcome!",
+  "featured": false
+}

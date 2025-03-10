@@ -1,0 +1,6 @@
+{
+  "id": "template",
+  "question": "I see it's built with Astro. May I steal your code to use it as a template?",
+  "answer": "[Feel free to](https://github.com/fyodorio/metaframeworks-newsletter-website), it’s MIT-licensed. Would definitely appreciate attribution (and your further personal customization for uniqueness) though. I'm considering adding that to [the Astro themes list](https://astro.build/themes/) some day, when it's combed a bit better.",
+  "featured": false
+}
