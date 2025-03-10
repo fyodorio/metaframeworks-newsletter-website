@@ -1,4 +1,5 @@
 ---
+import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 
 import BaseHead from '../components/BaseHead.astro';
@@ -6,10 +7,25 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import { SITE_TITLE } from '../consts';
+import SubscriptionForm from '../components/SubscriptionForm.astro';
 
 type Props = CollectionEntry<'archive'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  heroImage,
+  tags = [],
+  enableSubscription = false
+} = Astro.props;
+
+const tagCollection = await getCollection('tags');
+
+const tagMap = Object.fromEntries(
+  tagCollection.map((tag) => [tag.data.id, tag.data.name])
+);
 ---
 
 <html lang="en">
@@ -44,7 +60,31 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
           <section class="content">
             <slot />
           </section>
+
+          {
+            tags.length > 0 && (
+              <div class="tags">
+                {tags.map((tagId) => (
+                  <a href={`/tags/${tagId}/`} class="tag">
+                    #{tagMap[tagId] || tagId}
+                  </a>
+                ))}
+              </div>
+            )
+          }
         </div>
+
+        {
+          enableSubscription && (
+            <section class="if-useful">
+              <h5>
+                Found it useful? Consider subscribing. No hidden catch, no
+                strings attached.
+              </h5>
+              <SubscriptionForm />
+            </section>
+          )
+        }
       </article>
     </main>
     <Footer />
@@ -69,6 +109,12 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
   }
   .content {
     margin-top: 3rem;
+  }
+  .if-useful {
+    margin-top: 56px;
+  }
+  .if-useful h5 {
+    font-size: 1.1rem;
   }
   @media (max-width: 720px) {
     main {

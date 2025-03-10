@@ -17,6 +17,6 @@ const issue = Astro.props;
 const { Content } = await render(issue);
 ---
 
-<Layout {...issue.data}>
+<Layout {...issue.data} enableSubscription>
   <Content />
 </Layout>

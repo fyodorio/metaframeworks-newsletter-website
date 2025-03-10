@@ -22,6 +22,7 @@ const {
 const TitleTag = titleTag;
 
 const tagCollection = await getCollection('tags');
+
 const tagMap = Object.fromEntries(
   tagCollection.map((tag) => [tag.data.id, tag.data.name])
 );
@@ -79,32 +80,10 @@ const tagMap = Object.fromEntries(
   li a:hover .description {
     color: rgb(var(--accent));
   }
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 1rem;
-  }
-  .tag {
-    font-size: 0.875rem;
-    color: #394150;
-    background-color: rgb(229, 231, 235);
-    padding: 0.5rem 1rem;
-    border-radius: 9999px;
-    text-decoration: none;
-    transition: all 0.2s ease;
-  }
-  .tag:hover {
-    color: #394150;
-    background-color: #d2d5da;
-  }
   @media (max-width: 720px) {
     li {
       width: 100%;
       text-align: center;
-    }
-    .tags {
-      justify-content: center;
     }
   }
 </style>

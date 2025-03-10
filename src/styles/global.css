@@ -190,3 +190,28 @@ tbody > tr > td:first-child {
   /* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
   white-space: nowrap;
 }
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.tag {
+  font-size: 0.875rem;
+  color: #394150;
+  background-color: rgb(229, 231, 235);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  background-image: none !important;
+  transition: all 0.2s ease;
+}
+.tag:hover {
+  color: #394150;
+  background-color: #d2d5da;
+}
+@media (max-width: 720px) {
+  .tags {
+    justify-content: center;
+  }
+}
