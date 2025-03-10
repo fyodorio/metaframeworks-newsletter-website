@@ -1,0 +1,11 @@
+{
+  "name": "HTML Semantics and Accessibility",
+  "description": "Rules for semantic HTML, accessibility, and form elements in web applications",
+  "patterns": [
+    {
+      "files": ["**/*.html", "**/*.astro", "**/*.jsx", "**/*.tsx", "**/*.vue", "**/*.svelte"],
+      "rules": ["@.cursor/rules/html-semantics.md"]
+    }
+  ],
+  "priority": 2
+} 
