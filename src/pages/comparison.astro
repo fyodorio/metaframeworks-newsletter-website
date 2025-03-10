@@ -41,7 +41,7 @@ const getResultClass = (field: string, value: string) => {
 
 // Extract field names from the first entry (assuming all entries have the same structure)
 const fieldNames = Object.keys(metaframeworks[0]?.data || {}).filter(
-  (item) => item !== 'id' && item !== 'description'
+  (item) => item !== 'id' && item !== 'description' && item !== 'tag'
 );
 ---
 
