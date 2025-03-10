@@ -4,12 +4,16 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FaqSection from '../components/FaqSection.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import SubscriptionForm from '../components/SubscriptionForm.astro';
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={`FAQ - ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+    <BaseHead
+      title={`FAQ - ${SITE_TITLE}`}
+      description={'Frequently Asked Questions about the newsletter and the website content in general'}
+    />
   </head>
   <body>
     <Header />
@@ -20,6 +24,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
       </p>
 
       <FaqSection featuredOnly={false} title="" />
+
+      <section>
+        <h5>Interested? Subscribe to check everything yourself!</h5>
+        <SubscriptionForm />
+      </section>
     </main>
     <Footer />
   </body>
@@ -31,8 +40,12 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   }
 
   .description {
-    color: var(--secondary-text-color);
+    color: var(--accent);
     font-size: 1.2rem;
     text-align: center;
+  }
+
+  section {
+    margin-top: 56px;
   }
 </style>

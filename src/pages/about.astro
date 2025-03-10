@@ -1,9 +1,11 @@
 ---
 import Layout from '../layouts/ContentNarrow.astro';
+import { SITE_TITLE } from '../consts';
+import SubscriptionForm from '../components/SubscriptionForm.astro';
 ---
 
 <Layout
-  title="About the newsletter"
+  title={`About - ${SITE_TITLE}`}
   description="The what's and the why's"
   heroImage="/page-covers/about.png"
 >
@@ -61,6 +63,10 @@ import Layout from '../layouts/ContentNarrow.astro';
       make this experience smoother or more enjoyable, I’m all ears. Let’s make
       this journey better together! 🚀
     </p>
+  </section>
+
+  <section>
+    <SubscriptionForm />
   </section>
 </Layout>
 

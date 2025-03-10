@@ -6,6 +6,7 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import IssueCard from '../../components/IssueCard.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import SubscriptionForm from '../../components/SubscriptionForm.astro';
 
 const issues = (await getCollection('archive'))
   .filter((item) => item.data.published)
@@ -21,7 +22,10 @@ const issues = (await getCollection('archive'))
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead
+      title={`Archive - ${SITE_TITLE}`}
+      description={SITE_DESCRIPTION}
+    />
   </head>
   <body>
     <Header />
@@ -43,6 +47,11 @@ const issues = (await getCollection('archive'))
           }
         </ul>
       </section>
+
+      <section class="want-more">
+        <h5>Want more? Subscribe to get new issues right into your inbox!</h5>
+        <SubscriptionForm />
+      </section>
     </main>
     <Footer />
   </body>
@@ -51,6 +60,12 @@ const issues = (await getCollection('archive'))
 <style>
   section {
     margin-top: 32px;
+  }
+  .want-more {
+    margin-top: 56px;
+  }
+  h5 {
+    font-size: 1.25rem;
   }
   ul {
     display: flex;

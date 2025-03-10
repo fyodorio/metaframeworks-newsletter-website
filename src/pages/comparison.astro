@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 
 import WideLayout from '../layouts/ContentWide.astro';
+import { SITE_TITLE } from '../consts';
 
 // Fetch the metaframeworks collection
 const metaframeworks = await getCollection('metaframeworks');
@@ -46,7 +47,7 @@ const fieldNames = Object.keys(metaframeworks[0]?.data || {}).filter(
 ---
 
 <WideLayout
-  title="Comparison"
+  title={`Comparison - ${SITE_TITLE}`}
   description="Features of modern metaframeworks side by side"
   heroImage="/page-covers/comparison.png"
 >
