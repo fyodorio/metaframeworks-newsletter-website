@@ -200,7 +200,7 @@ tbody > tr > td:first-child {
   font-size: 0.875rem;
   color: #394150;
   background-color: rgb(229, 231, 235);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem !important;
   border-radius: 9999px;
   text-decoration: none;
   background-image: none !important;
