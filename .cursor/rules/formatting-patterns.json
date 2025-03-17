@@ -1,0 +1,9 @@
+{
+  "patterns": [
+    {
+      "name": "format_on_save",
+      "on": "file_save",
+      "run": "npm run format"
+    }
+  ]
+} 
