@@ -1,0 +1,9 @@
+{
+  "patterns": [
+    {
+      "name": "strict-versioning",
+      "pattern": "([\"'])(\\^|~)?\\d+\\.\\d+\\.\\d+([\"'])",
+      "message": "Use strict semantic versioning without ^ or ~ prefixes"
+    }
+  ]
+} 
