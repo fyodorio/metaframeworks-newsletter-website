@@ -407,6 +407,7 @@
     "id": "RedwoodJS",
     "name": "RedwoodJS",
     "description": "Batteries-included React- and RSC-based full-stack web framework for startups.",
+    "tag": "redwoodjs",
     "officialSite": "https://redwoodjs.com",
     "codeRepository": "https://github.com/redwoodjs/redwood",
     "runtime": ["Node.js", "Serverless Functions"],
