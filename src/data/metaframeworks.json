@@ -566,6 +566,7 @@
     "id": "Waku",
     "name": "Waku",
     "description": "Minimalist RSC-focused React framework.",
+    "tag": "waku",
     "officialSite": "https://waku.gg",
     "codeRepository": "https://github.com/dai-shi/waku",
     "runtime": ["Node.js"],
