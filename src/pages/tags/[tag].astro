@@ -42,6 +42,13 @@ const issues = (await getCollection('archive'))
     <Header />
     <main>
       <h1>Issues tagged with "{tag.data.name}"</h1>
+      {
+        tag.data.description && (
+          <p role="definition" class="tag-description">
+            {tag.data.description}
+          </p>
+        )
+      }
       <section>
         <ul>
           {
@@ -74,5 +81,12 @@ const issues = (await getCollection('archive'))
     list-style-type: none;
     margin: 0;
     padding: 0;
+  }
+  .tag-description {
+    font-weight: normal;
+    font-size: 1.75rem;
+    text-align: center;
+    margin: 20px 0;
+    color: rgb(var(--gray));
   }
 </style>
