@@ -1,4 +1,5 @@
 {
   "id": "astro",
-  "name": "Astro"
-} 
+  "name": "Astro",
+  "description": "The all-in-one web framework for content-driven websites with multi-framework components approach."
+}

@@ -1,4 +1,5 @@
 {
   "id": "preact",
-  "name": "Preact"
-} 
+  "name": "Preact",
+  "description": "A fast 3kB alternative to React with the same modern API."
+}

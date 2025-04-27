@@ -1,4 +1,5 @@
 {
   "id": "fullsoak",
-  "name": "FullSoak"
+  "name": "Fullsoak",
+  "description": "A lightweight web framework focused on simplicity and performance."
 }

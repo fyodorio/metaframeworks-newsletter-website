@@ -1,4 +1,5 @@
 {
   "id": "eslint",
-  "name": "ESLint"
-} 
+  "name": "ESLint",
+  "description": "A pluggable and configurable linter tool for identifying and reporting on patterns in JavaScript."
+}

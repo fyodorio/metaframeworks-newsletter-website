@@ -1,4 +1,5 @@
 {
   "id": "parcel",
-  "name": "Parcel"
+  "name": "Parcel",
+  "description": "A zero configuration web application bundler that supports many file types out of the box."
 }

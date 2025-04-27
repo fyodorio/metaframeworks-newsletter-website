@@ -1,4 +1,5 @@
 {
   "id": "server",
-  "name": "Server"
+  "name": "Server",
+  "description": "Server-side technologies, frameworks, and best practices for web development."
 }

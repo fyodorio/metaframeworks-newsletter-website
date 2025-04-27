@@ -1,4 +1,5 @@
 {
   "id": "performance",
-  "name": "Performance"
-} 
+  "name": "Performance",
+  "description": "Web performance optimization, metrics, and techniques for building fast and efficient applications."
+}

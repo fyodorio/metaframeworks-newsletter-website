@@ -1,4 +1,5 @@
 {
   "id": "enhance",
-  "name": "Enhance"
+  "name": "Enhance",
+  "description": "HTML-first full-stack web framework focused on web components and progressive enhancement."
 }

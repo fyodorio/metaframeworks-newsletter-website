@@ -1,4 +1,5 @@
 {
   "id": "brisa",
-  "name": "Brisa"
+  "name": "Brisa",
+  "description": "Bun-based full-stack web framework with progressive enhancement and web components philosophy."
 }

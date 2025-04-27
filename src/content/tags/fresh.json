@@ -1,4 +1,5 @@
 {
   "id": "fresh",
-  "name": "Fresh"
+  "name": "Fresh",
+  "description": "Deno-based full-stack web framework using Preact for server-rendered components."
 }

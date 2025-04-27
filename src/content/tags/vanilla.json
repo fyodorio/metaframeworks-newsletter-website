@@ -1,4 +1,5 @@
 {
   "id": "vanilla",
-  "name": "Vanilla JS"
+  "name": "Vanilla",
+  "description": "Pure JavaScript and web standards without frameworks or libraries."
 }

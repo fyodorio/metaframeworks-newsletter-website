@@ -1,4 +1,5 @@
 {
   "id": "vue",
-  "name": "Vue"
+  "name": "Vue",
+  "description": "A progressive JavaScript framework for building user interfaces."
 }

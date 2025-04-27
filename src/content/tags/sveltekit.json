@@ -1,4 +1,5 @@
 {
   "id": "sveltekit",
-  "name": "SvelteKit"
-} 
+  "name": "SvelteKit",
+  "description": "A framework for rapidly developing robust, performant web applications using Svelte."
+}

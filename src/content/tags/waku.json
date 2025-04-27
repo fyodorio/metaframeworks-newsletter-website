@@ -1,4 +1,5 @@
 {
   "id": "waku",
-  "name": "Waku"
+  "name": "Waku",
+  "description": "Minimalist RSC-focused React framework."
 }

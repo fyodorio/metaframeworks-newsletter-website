@@ -1,4 +1,5 @@
 {
   "id": "deno",
-  "name": "Deno"
-} 
+  "name": "Deno",
+  "description": "A secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust."
+}

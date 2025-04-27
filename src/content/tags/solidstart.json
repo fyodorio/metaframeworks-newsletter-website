@@ -1,4 +1,5 @@
 {
   "id": "solidstart",
-  "name": "SolidStart"
-} 
+  "name": "SolidStart",
+  "description": "Fine-grained reactivity goes fullstack."
+}

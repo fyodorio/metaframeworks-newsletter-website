@@ -1,4 +1,5 @@
 {
   "id": "bun",
-  "name": "Bun"
+  "name": "Bun",
+  "description": "A fast all-in-one JavaScript runtime, bundler, test runner, and package manager."
 }

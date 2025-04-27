@@ -1,4 +1,5 @@
 {
   "id": "tailwind",
-  "name": "Tailwind CSS"
+  "name": "Tailwind",
+  "description": "A utility-first CSS framework for rapidly building custom user interfaces."
 }

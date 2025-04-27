@@ -1,4 +1,5 @@
 {
   "id": "tanstack",
-  "name": "TanStack"
-} 
+  "name": "TanStack Start",
+  "description": "Full-stack React framework powered by TanStack Router."
+}

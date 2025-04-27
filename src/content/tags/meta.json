@@ -1,4 +1,5 @@
 {
   "id": "meta",
-  "name": "Newsletter"
+  "name": "Meta",
+  "description": "Meta-frameworks and tools that build on top of existing web frameworks."
 }

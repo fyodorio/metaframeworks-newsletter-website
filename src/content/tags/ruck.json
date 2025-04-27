@@ -1,4 +1,5 @@
 {
   "id": "ruck",
-  "name": "Ruck"
+  "name": "Ruck",
+  "description": "A lightweight web framework focused on simplicity and developer experience."
 }

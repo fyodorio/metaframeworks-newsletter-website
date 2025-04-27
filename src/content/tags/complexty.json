@@ -1,4 +1,5 @@
 {
   "id": "complexity",
-  "name": "Complexity"
+  "name": "Complexity",
+  "description": "Analysis of framework complexity, learning curves, and architectural considerations in web development."
 }

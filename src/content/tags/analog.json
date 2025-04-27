@@ -1,4 +1,5 @@
 {
   "id": "analog",
-  "name": "Analog"
+  "name": "Analog",
+  "description": "The fullstack Angular metaframework."
 }

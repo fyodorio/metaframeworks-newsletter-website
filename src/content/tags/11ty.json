@@ -1,4 +1,5 @@
 {
   "id": "11ty",
-  "name": "11ty"
+  "name": "11ty",
+  "description": "JAMstack swiss-army knife that had overgrown static websites."
 }
