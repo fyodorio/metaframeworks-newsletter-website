@@ -215,3 +215,10 @@ tbody > tr > td:first-child {
     justify-content: center;
   }
 }
+.subtitle-description {
+  font-weight: normal;
+  font-size: 1.75rem;
+  text-align: center;
+  margin: 20px 0;
+  color: rgb(var(--gray));
+}
