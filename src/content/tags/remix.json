@@ -1,5 +1,5 @@
 {
   "id": "remix",
-  "name": "Remix",
-  "description": "Web standards focused React metaframework."
+  "name": "Remix / React Router",
+  "description": "Web standards focused React metaframework (and routing library at the same time)."
 }
