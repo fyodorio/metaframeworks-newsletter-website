@@ -1,0 +1,5 @@
+{
+  "id": "rsc",
+  "name": "React Server Components",
+  "description": "React-based approach to performant UI components rendering ahead of time, on the server or at build time."
+}
