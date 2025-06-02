@@ -1,5 +1,5 @@
 {
   "id": "redwoodjs",
-  "name": "RedwoodJS",
-  "description": "Batteries-included React- and RSC-based full-stack web framework for startups."
+  "name": "RedwoodJS / RedwoodSDK",
+  "description": "Batteries-included React- and RSC-based full-stack web framework for Cloudflare."
 }
