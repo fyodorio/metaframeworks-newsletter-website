@@ -208,6 +208,7 @@
     "id": "Hono",
     "name": "Hono",
     "description": "Full-stack framework starting from the server-side with static site generation, client components, and file-based routing.",
+    "tag": "hono",
     "officialSite": "https://hono.dev",
     "codeRepository": "https://github.com/honojs/hono",
     "runtime": ["Node.js", "Edge compute"],
