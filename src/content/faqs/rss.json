@@ -1,0 +1,6 @@
+{
+  "id": "rss",
+  "question": "Is there an RSS feed for the newsletter?",
+  "answer": "Yes, you can either insert [the website link](https://metaframe.works) to your RSS reader application of choice (_if it supports RSS autodetection_), or use [this traditional direct XML link](https://metaframe.works/rss.xml).",
+  "featured": true
+}
