@@ -4,6 +4,8 @@ import { ClientRouter } from 'astro:transitions';
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
 
+import { SITE_TITLE } from '../consts';
+
 interface Props {
   title: string;
   description: string;
@@ -50,6 +52,14 @@ const { title, description, image = '/default-cover.png' } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<!-- RSS autodiscovery -->
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title={SITE_TITLE}
+  href={new URL('rss.xml', Astro.site)}
+/>
 
 <!-- Add view transitions -->
 <ClientRouter />

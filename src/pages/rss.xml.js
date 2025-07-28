@@ -9,9 +9,18 @@ export async function GET(context) {
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
     site: context.site,
-    items: issues.map((issue) => ({
-      ...issue.data,
-      link: `/archive/${issue.id}/`
-    }))
+    items: issues
+      .filter((item) => item.data.published)
+      .sort((a, b) => {
+        if (b.data.pubDate && a.data.pubDate) {
+          return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
+        } else {
+          return 0;
+        }
+      })
+      .map((issue) => ({
+        ...issue.data,
+        link: `/archive/${issue.id}/`
+      }))
   });
 }
