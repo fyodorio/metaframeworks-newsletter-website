@@ -387,7 +387,7 @@
     "id": "RedwoodJS",
     "name": "RedwoodSDK",
     "description": "Batteries-included React- and RSC-based full-stack web framework for Cloudflare.",
-    "tag": "redwood",
+    "tag": "redwoodjs",
     "officialSite": "https://rwsdk.com",
     "codeRepository": "https://github.com/redwoodjs/sdk",
     "runtime": ["Node.js", "Serverless Functions"],
