@@ -164,6 +164,7 @@
     "id": "Gatsby",
     "name": "Gatsby",
     "description": "React-based full-stack web framework in love with GraphQL.",
+    "tag": "gatsby",
     "officialSite": "https://www.gatsbyjs.com",
     "codeRepository": "https://github.com/gatsbyjs/gatsby",
     "runtime": ["Node.js", "Serverless Functions"],
