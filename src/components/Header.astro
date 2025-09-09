@@ -9,7 +9,13 @@ import { SITE_TITLE } from '../consts';
   <nav>
     <h2>
       <a class="brand" href="/">
-        <Image src={logoImage} alt="Metaframeworks Records logo" height="48" />
+        <Image
+          src={logoImage}
+          alt="Metaframeworks Records logo"
+          height="48"
+          data-astro-transition-persist="site-logo"
+          style="view-transition-name: site-logo"
+        />
         {SITE_TITLE}
       </a>
     </h2>
