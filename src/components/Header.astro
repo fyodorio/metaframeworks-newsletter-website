@@ -69,17 +69,16 @@ import { SITE_TITLE } from '../consts';
       flex-direction: column;
     }
   }
-  .logo {
-    font-family: 'Pixelify Sans', serif !important;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    border: 2px solid black;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  @media (max-width: 390px) {
+    h2 {
+      font-size: 1.2rem;
+      img {
+        height: 36px;
+        width: auto;
+      }
+    }
+    .internal-links {
+      font-size: 0.9rem;
+    }
   }
 </style>
