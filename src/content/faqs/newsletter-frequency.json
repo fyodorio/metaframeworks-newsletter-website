@@ -1,6 +1,6 @@
 {
   "id": "newsletter-frequency",
   "question": "How often is the newsletter issued?",
-  "answer": "The newsletter is typically published weekly, on Mondays, but please don't judge any random deviations to hard (_I'm only a human after all_). Usually, each issue contains a curated list of the most important metaframework news and updates from _the previous week_ (_or a couple of weeks_) but sometimes there can be some precious nuggets from the olden days if I consider them relevant and truly golden.",
+  "answer": "The newsletter is typically published fortnightly, on Thursdays (or Fridays), but please don't judge any random deviations to hard (_I'm only a human after all_). Usually, each issue contains a curated list of the most important metaframework news and updates from _the previous week_ (_or a couple of weeks_) but sometimes there can be some precious nuggets from the olden days if I consider them relevant and truly golden.",
   "featured": false
-} 
+}
