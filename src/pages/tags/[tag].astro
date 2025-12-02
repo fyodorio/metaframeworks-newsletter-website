@@ -38,7 +38,7 @@ const issues = (await getCollection('archive'))
       description={`Issues tagged with ${tag.data.name}`}
     />
   </head>
-  <body>
+  <body data-pagefind-ignore>
     <Header />
     <main>
       <h1>Issues tagged with "{tag.data.name}"</h1>

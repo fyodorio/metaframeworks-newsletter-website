@@ -18,7 +18,8 @@ const {
   updatedDate,
   heroImage,
   tags = [],
-  enableSubscription = false
+  enableSubscription = false,
+  'data-pagefind-ignore': pagefindIgnore
 } = Astro.props;
 
 const tagCollection = await getCollection('tags');
@@ -37,7 +38,7 @@ const tagMap = Object.fromEntries(
     />
   </head>
 
-  <body>
+  <body data-pagefind-ignore={pagefindIgnore}>
     <Header />
     <main>
       <article>

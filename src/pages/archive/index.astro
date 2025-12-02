@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import Search from 'astro-pagefind/components/Search';
 
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
@@ -27,11 +28,21 @@ const issues = (await getCollection('archive'))
       description={SITE_DESCRIPTION}
     />
   </head>
-  <body>
+
+  <body data-pagefind-ignore>
     <Header />
     <main>
       <h1>Archive</h1>
+
       <section>
+        <Search
+          id="search"
+          className="pagefind-ui"
+          uiOptions={{ showImages: false }}
+        />
+      </section>
+
+      <section id="archive-list">
         <ul>
           {
             issues.map((issue) => (
@@ -54,6 +65,53 @@ const issues = (await getCollection('archive'))
       </section>
     </main>
     <Footer />
+
+    <script>
+      // Hide archive section when search has input
+      const archiveList = document.getElementById('archive-list');
+
+      // Wait for Pagefind to load and create the search input
+      const observer = new MutationObserver(() => {
+        const searchInput = document.querySelector(
+          '.pagefind-ui__search-input'
+        );
+        const searchContainer = document.querySelector('.pagefind-ui');
+
+        if (searchInput && searchContainer && archiveList) {
+          observer.disconnect();
+
+          const toggleArchive = () => {
+            const hasSearchQuery = searchInput.value.trim().length > 0;
+            archiveList.style.display = hasSearchQuery ? 'none' : 'block';
+          };
+
+          searchInput.addEventListener('input', toggleArchive);
+
+          // Watch for the Clear button within the search container
+          const buttonObserver = new MutationObserver(() => {
+            const clearButton = document.querySelector(
+              '.pagefind-ui__search-clear'
+            );
+            if (clearButton && !clearButton.dataset.listenerAdded) {
+              clearButton.dataset.listenerAdded = 'true';
+              clearButton.addEventListener('click', () => {
+                setTimeout(toggleArchive, 50);
+              });
+            }
+          });
+
+          buttonObserver.observe(searchContainer, {
+            childList: true,
+            subtree: true
+          });
+
+          toggleArchive();
+        }
+      });
+
+      // Start observing the document for changes
+      observer.observe(document.body, { childList: true, subtree: true });
+    </script>
   </body>
 </html>
 
@@ -74,5 +132,21 @@ const issues = (await getCollection('archive'))
     list-style-type: none;
     margin: 0;
     padding: 0;
+  }
+
+  /* Style Pagefind search input to match the subscription input */
+  :global(.pagefind-ui__search-input) {
+    border: 2px solid black !important;
+    border-radius: 0 !important;
+  }
+  :global(.pagefind-ui__search-input:focus) {
+    outline: none;
+  }
+
+  /* To avoid width jumps on search */
+  @media (min-width: 720px) {
+    main {
+      width: 720px;
+    }
   }
 </style>
