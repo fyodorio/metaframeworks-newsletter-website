@@ -1,7 +1,7 @@
 {
   "name": "metaframeworks-newsletter-website",
   "type": "module",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "scripts": {
     "start": "npm run dev",
     "dev": "astro dev",
@@ -16,7 +16,7 @@
     "@astrojs/mdx": "4.3.13",
     "@astrojs/rss": "4.0.15",
     "@astrojs/sitemap": "3.7.0",
-    "astro": "5.16.11",
+    "astro": "5.17.1",
     "astro-pagefind": "1.8.5",
     "rehype-raw": "7.0.0",
     "rehype-stringify": "10.0.1",
