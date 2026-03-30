@@ -1,7 +1,7 @@
 {
   "name": "metaframeworks-newsletter-website",
   "type": "module",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "scripts": {
     "start": "npm run dev",
     "dev": "astro dev",
@@ -10,9 +10,11 @@
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write \"src/**/*.{css,js,ts,astro}\"",
+    "check": "astro check",
     "upgrade": "npx @astrojs/upgrade"
   },
   "dependencies": {
+    "@astrojs/check": "0.9.8",
     "@astrojs/mdx": "5.0.2",
     "@astrojs/rss": "4.0.17",
     "@astrojs/sitemap": "3.7.1",
@@ -22,7 +24,8 @@
     "rehype-stringify": "10.0.1",
     "remark": "15.0.1",
     "remark-gfm": "4.0.1",
-    "remark-rehype": "11.1.2"
+    "remark-rehype": "11.1.2",
+    "typescript": "5.9.3"
   },
   "devDependencies": {
     "prettier": "3.6.2",

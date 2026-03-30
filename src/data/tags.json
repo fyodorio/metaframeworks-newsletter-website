@@ -1,0 +1,237 @@
+[
+  {
+    "id": "11ty",
+    "name": "Eleventy",
+    "description": "JAMstack swiss-army knife that had overgrown static websites."
+  },
+  {
+    "id": "ai",
+    "name": "AI",
+    "description": "Artificial Intelligence and Machine Learning technologies in web development."
+  },
+  {
+    "id": "analog",
+    "name": "Analog",
+    "description": "The fullstack Angular metaframework."
+  },
+  {
+    "id": "angular",
+    "name": "Angular",
+    "description": "A platform and framework for building single-page client applications using HTML and TypeScript."
+  },
+  {
+    "id": "astro",
+    "name": "Astro",
+    "description": "The all-in-one web framework for content-driven websites with multi-framework components approach."
+  },
+  {
+    "id": "brisa",
+    "name": "Brisa",
+    "description": "Bun-based full-stack web framework with progressive enhancement and web components philosophy."
+  },
+  {
+    "id": "bun",
+    "name": "Bun",
+    "description": "A fast all-in-one JavaScript runtime, bundler, test runner, and package manager."
+  },
+  {
+    "id": "comparison",
+    "name": "Comparison",
+    "description": "Comparative analysis of different web frameworks, tools, and technologies."
+  },
+  {
+    "id": "complexity",
+    "name": "Complexity",
+    "description": "Analysis of framework complexity, learning curves, and architectural considerations in web development."
+  },
+  {
+    "id": "css",
+    "name": "CSS",
+    "description": "A rule-based language making your web pages shine."
+  },
+  {
+    "id": "deno",
+    "name": "Deno",
+    "description": "A secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust."
+  },
+  {
+    "id": "docusaurus",
+    "name": "Docusaurus",
+    "description": "Content-focused metaframework tailor-made for documentation websites."
+  },
+  {
+    "id": "enhance",
+    "name": "Enhance",
+    "description": "HTML-first full-stack web framework focused on web components and progressive enhancement."
+  },
+  {
+    "id": "eslint",
+    "name": "ESLint",
+    "description": "A pluggable and configurable linter tool for identifying and reporting on patterns in JavaScript."
+  },
+  {
+    "id": "expressjs",
+    "name": "Express.js",
+    "description": "A minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications."
+  },
+  {
+    "id": "fresh",
+    "name": "Fresh",
+    "description": "Deno-based full-stack web framework using Preact for server-rendered components."
+  },
+  {
+    "id": "gatsby",
+    "name": "Gatsby",
+    "description": "React-based full-stack web framework in love with GraphQL."
+  },
+  {
+    "id": "hono",
+    "name": "Hono",
+    "description": "Full-stack framework starting from the server-side with static site generation, client components, and file-based routing."
+  },
+  {
+    "id": "html",
+    "name": "HTML",
+    "description": "Standard markup language for creating Web pages."
+  },
+  {
+    "id": "meta",
+    "name": "Meta",
+    "description": "Thoughts, insights, and insider information about the newsletter itself and its behind-the-scenes content."
+  },
+  {
+    "id": "newborn",
+    "name": "Newborn",
+    "description": "The idea that a new JavaScript framework emerges every day is a common, albeit exaggerated, sentiment within the web development community. Who's next?"
+  },
+  {
+    "id": "nextjs",
+    "name": "Next.js",
+    "description": "React-based framework for building full-stack web applications."
+  },
+  {
+    "id": "nitro",
+    "name": "Nitro",
+    "description": "Flexible web-server toolkit for metaframeworks from Nuxt team."
+  },
+  {
+    "id": "nuxt",
+    "name": "Nuxt",
+    "description": "Vue-based framework for performant and production-grade full-stack web apps."
+  },
+  {
+    "id": "parcel",
+    "name": "Parcel",
+    "description": "A zero configuration web application bundler that supports many file types out of the box."
+  },
+  {
+    "id": "performance",
+    "name": "Performance",
+    "description": "Web performance optimization, metrics, and techniques for building fast and efficient applications."
+  },
+  {
+    "id": "preact",
+    "name": "Preact",
+    "description": "A fast 3kB alternative to React with the same modern API."
+  },
+  {
+    "id": "qwik",
+    "name": "Qwik City",
+    "description": "A resumable, instant-on web application framework that requires zero hydration."
+  },
+  {
+    "id": "react",
+    "name": "React",
+    "description": "A JavaScript library for building user interfaces, maintained by Meta."
+  },
+  {
+    "id": "redwoodjs",
+    "name": "RedwoodJS / RedwoodSDK",
+    "description": "Batteries-included React- and RSC-based full-stack web framework for Cloudflare."
+  },
+  {
+    "id": "remix",
+    "name": "Remix / React Router",
+    "description": "Web standards focused React metaframework (and routing library at the same time)."
+  },
+  {
+    "id": "rsc",
+    "name": "React Server Components",
+    "description": "React-based approach to performant UI components rendering ahead of time, on the server or at build time."
+  },
+  {
+    "id": "security",
+    "name": "Security",
+    "description": "Web security best practices, vulnerabilities, and security-focused tools and frameworks."
+  },
+  {
+    "id": "server",
+    "name": "Server",
+    "description": "Server-side technologies, frameworks, and best practices for web development."
+  },
+  {
+    "id": "solid",
+    "name": "Solid",
+    "description": "A declarative JavaScript library for creating user interfaces with fine-grained reactivity."
+  },
+  {
+    "id": "solidstart",
+    "name": "SolidStart",
+    "description": "Fine-grained reactivity goes fullstack."
+  },
+  {
+    "id": "storybook",
+    "name": "Storybook",
+    "description": "An open source tool for building UI components and pages in isolation."
+  },
+  {
+    "id": "svelte",
+    "name": "Svelte",
+    "description": "A radical new approach to building user interfaces that shifts work from the browser to the build step."
+  },
+  {
+    "id": "sveltekit",
+    "name": "SvelteKit",
+    "description": "A framework for rapidly developing robust, performant web applications using Svelte."
+  },
+  {
+    "id": "tailwind",
+    "name": "Tailwind",
+    "description": "A utility-first CSS framework for rapidly building custom user interfaces."
+  },
+  {
+    "id": "tanstack",
+    "name": "TanStack Start",
+    "description": "Full-stack React framework powered by TanStack Router."
+  },
+  {
+    "id": "umijs",
+    "name": "UmiJS",
+    "description": "Enterprise-class React application framework with a focus on performance and developer experience."
+  },
+  {
+    "id": "vanilla",
+    "name": "Vanilla JS",
+    "description": "Using pure JavaScript and web standards without frameworks or libraries."
+  },
+  {
+    "id": "vite",
+    "name": "Vite",
+    "description": "Next generation frontend tooling that's focused on speed and simplicity."
+  },
+  {
+    "id": "vitest",
+    "name": "Vitest",
+    "description": "A blazing fast unit test framework powered by Vite."
+  },
+  {
+    "id": "vue",
+    "name": "Vue",
+    "description": "A progressive JavaScript framework for building user interfaces."
+  },
+  {
+    "id": "waku",
+    "name": "Waku",
+    "description": "Minimalist RSC-focused React framework."
+  }
+]

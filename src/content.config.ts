@@ -29,12 +29,12 @@ const metaframeworks = defineCollection({
 });
 
 const tags = defineCollection({
-  loader: glob({ base: './src/content/tags', pattern: '**/*.json' }),
+  loader: file('src/data/tags.json'),
   schema: tagSchema
 });
 
 const faqs = defineCollection({
-  loader: glob({ base: './src/content/faqs', pattern: '**/*.json' }),
+  loader: file('src/data/faqs.json'),
   schema: faqSchema
 });
 
