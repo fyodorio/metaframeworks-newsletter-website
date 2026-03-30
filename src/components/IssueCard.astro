@@ -9,6 +9,7 @@ interface Props {
   id: string;
   titleTag?: 'h3' | 'h4';
   tags?: string[];
+  basePath?: string;
 }
 
 const {
@@ -17,7 +18,8 @@ const {
   description,
   id,
   titleTag = 'h3',
-  tags = []
+  tags = [],
+  basePath = 'archive'
 } = Astro.props;
 const TitleTag = titleTag;
 
@@ -29,7 +31,7 @@ const tagMap = Object.fromEntries(
 ---
 
 <li>
-  <a href={`/archive/${id}/`}>
+  <a href={`/${basePath}/${id}/`}>
     <TitleTag class="title">{title}</TitleTag>
     <p class="date">
       {pubDate && <FormattedDate date={pubDate} />}

@@ -1,0 +1,87 @@
+---
+import { getCollection } from 'astro:content';
+
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import IssueCard from '../../components/IssueCard.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import SubscriptionForm from '../../components/SubscriptionForm.astro';
+
+const blogPosts = (await getCollection('blog'))
+  .filter((item) => item.data.published)
+  .sort((a, b) => {
+    if (b.data.pubDate && a.data.pubDate) {
+      return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
+    } else {
+      return 0;
+    }
+  });
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={`Blog - ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+  </head>
+
+  <body data-pagefind-ignore>
+    <Header />
+    <main>
+      <h1>Blog</h1>
+
+      <section id="blog-post-list">
+        <ul>
+          {
+            blogPosts.map((issue) => (
+              <IssueCard
+                title={issue.data.title}
+                pubDate={issue.data.pubDate}
+                description={issue.data.description}
+                id={issue.id}
+                tags={issue.data.tags}
+                titleTag="h4"
+                basePath="blog"
+              />
+            ))
+          }
+        </ul>
+      </section>
+
+      <section class="want-more">
+        <h5>
+          <span>Want to know more about metaframeworks?</span>
+          <span
+            >Subscribe to get the dedicated newsletter issues right into your
+            inbox!</span
+          >
+        </h5>
+        <SubscriptionForm />
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  section {
+    margin-top: 32px;
+  }
+  .want-more {
+    margin-top: 56px;
+  }
+  h5 {
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+</style>

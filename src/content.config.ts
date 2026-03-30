@@ -1,33 +1,26 @@
 import { glob, file } from 'astro/loaders';
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
 
 import { metaframeworkSchema } from './schemas/metaframework.schema';
 import { tagSchema } from './schemas/tag.schema';
 import { faqSchema } from './schemas/faq.schema';
+import { archiveIssueSchema } from './schemas/archive-issue.schema.ts';
+import { pageSchema } from './schemas/page.schema.ts';
+import { blogPostSchema } from './schemas/blog-post.schema.ts';
 
 const archive = defineCollection({
   loader: glob({ base: './src/content/archive', pattern: '**/*.{md,mdx}' }),
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    pubDate: z.coerce.date().optional(),
-    updatedDate: z.coerce.date().optional(),
-    heroImage: z.string().optional(),
-    published: z.boolean().optional(),
-    tags: z.array(z.string()).optional()
-  })
+  schema: archiveIssueSchema
+});
+
+const blog = defineCollection({
+  loader: glob({ base: './src/content/blog', pattern: '**/*.{md,mdx}' }),
+  schema: blogPostSchema
 });
 
 const pages = defineCollection({
   loader: glob({ base: './src/content/pages', pattern: '**/*.{md,mdx}' }),
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    pubDate: z.coerce.date().optional(),
-    updatedDate: z.date().optional(),
-    heroImage: z.string().optional(),
-    published: z.boolean().optional()
-  })
+  schema: pageSchema
 });
 
 const metaframeworks = defineCollection({
@@ -47,6 +40,7 @@ const faqs = defineCollection({
 
 export const collections = {
   archive,
+  blog,
   pages,
   metaframeworks,
   tags,
