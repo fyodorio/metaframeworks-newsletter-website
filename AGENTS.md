@@ -80,7 +80,7 @@ Key Prettier settings: single quotes, 2-space indent, no trailing commas, semico
 ## Proofreading (newsletter content)
 
 - British style English, American spelling (e.g. "color", "organize")
-- Sentence case for titles (capitalize first word and proper nouns only)
+- Sentence case for titles (capitalize first word and proper nouns only) except newsletter issue, blogpost, and page titles
 - En-dashes wrapped in spaces (`–`) instead of em-dashes
 - Oxford comma in lists of three or more items
 - Straight apostrophes (`'`), not curly
