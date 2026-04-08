@@ -7,7 +7,9 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import { SITE_TITLE } from '../consts';
 
-type Props = CollectionEntry<'archive'>['data'];
+type Props = CollectionEntry<'archive'>['data'] & {
+  'data-pagefind-ignore'?: boolean;
+};
 
 const {
   title,

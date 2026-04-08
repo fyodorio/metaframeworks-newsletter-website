@@ -9,7 +9,10 @@ import FormattedDate from '../components/FormattedDate.astro';
 import { SITE_TITLE } from '../consts';
 import SubscriptionForm from '../components/SubscriptionForm.astro';
 
-type Props = CollectionEntry<'archive'>['data'];
+type Props = CollectionEntry<'archive'>['data'] & {
+  enableSubscription?: boolean;
+  'data-pagefind-ignore'?: boolean;
+};
 
 const {
   title,

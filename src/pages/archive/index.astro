@@ -72,7 +72,7 @@ const issues = (await getCollection('archive'))
 
       // Wait for Pagefind to load and create the search input
       const observer = new MutationObserver(() => {
-        const searchInput = document.querySelector(
+        const searchInput = document.querySelector<HTMLInputElement>(
           '.pagefind-ui__search-input'
         );
         const searchContainer = document.querySelector('.pagefind-ui');
@@ -89,7 +89,7 @@ const issues = (await getCollection('archive'))
 
           // Watch for the Clear button within the search container
           const buttonObserver = new MutationObserver(() => {
-            const clearButton = document.querySelector(
+            const clearButton = document.querySelector<HTMLElement>(
               '.pagefind-ui__search-clear'
             );
             if (clearButton && !clearButton.dataset.listenerAdded) {
