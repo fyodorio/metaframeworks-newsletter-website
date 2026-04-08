@@ -1,8 +1,13 @@
 [
   {
     "id": "11ty",
-    "name": "Eleventy",
+    "name": "Eleventy / Build Awesome",
     "description": "JAMstack swiss-army knife that had overgrown static websites."
+  },
+  {
+    "id": "acquisitions",
+    "name": "Acquisitions & Mergers",
+    "description": "Q&A on M&A — tools and frameworks turning into something else or changing their owners."
   },
   {
     "id": "ai",
@@ -83,6 +88,11 @@
     "id": "gatsby",
     "name": "Gatsby",
     "description": "React-based full-stack web framework in love with GraphQL."
+  },
+  {
+    "id": "graveyard",
+    "name": "Metaframeworks Graveyard",
+    "description": "Tools that are gone or gonna be gone soon."
   },
   {
     "id": "hono",
