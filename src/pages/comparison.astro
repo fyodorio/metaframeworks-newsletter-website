@@ -7,7 +7,7 @@ import WideLayout from '../layouts/ContentWide.astro';
 const metaframeworks = await getCollection('metaframeworks');
 
 // Function to convert camelCase or snake_case to human-readable titles
-const toTitleCase = (str) => {
+const toTitleCase = (str: string) => {
   return str
     .replace(/([A-Z])/g, ' $1') // Add space before capital letters
     .replace(/_/g, ' ') // Replace underscores with spaces

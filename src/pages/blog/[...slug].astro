@@ -17,6 +17,6 @@ const blogPost = Astro.props;
 const { Content } = await render(blogPost);
 ---
 
-<Layout {...blogPost.data} enableSubscription>
+<Layout {...blogPost.data} enableSubscription data-pagefind-ignore>
   <Content />
 </Layout>

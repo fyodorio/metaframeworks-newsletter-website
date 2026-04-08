@@ -5,7 +5,6 @@ import { metaframeworkSchema } from './schemas/metaframework.schema';
 import { tagSchema } from './schemas/tag.schema';
 import { faqSchema } from './schemas/faq.schema';
 import { archiveIssueSchema } from './schemas/archive-issue.schema.ts';
-import { pageSchema } from './schemas/page.schema.ts';
 import { blogPostSchema } from './schemas/blog-post.schema.ts';
 
 const archive = defineCollection({
@@ -16,11 +15,6 @@ const archive = defineCollection({
 const blog = defineCollection({
   loader: glob({ base: './src/content/blog', pattern: '**/*.{md,mdx}' }),
   schema: blogPostSchema
-});
-
-const pages = defineCollection({
-  loader: glob({ base: './src/content/pages', pattern: '**/*.{md,mdx}' }),
-  schema: pageSchema
 });
 
 const metaframeworks = defineCollection({
@@ -41,7 +35,6 @@ const faqs = defineCollection({
 export const collections = {
   archive,
   blog,
-  pages,
   metaframeworks,
   tags,
   faqs
