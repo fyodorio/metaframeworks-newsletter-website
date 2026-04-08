@@ -145,6 +145,11 @@
     "description": "A fast 3kB alternative to React with the same modern API."
   },
   {
+    "id": "quasar",
+    "name": "Quasar",
+    "description": "The enterprise-ready cross-platform Vue framework."
+  },
+  {
     "id": "qwik",
     "name": "Qwik City",
     "description": "A resumable, instant-on web application framework that requires zero hydration."

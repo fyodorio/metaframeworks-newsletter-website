@@ -366,6 +366,7 @@
     "id": "Quasar",
     "name": "Quasar",
     "description": "The enterprise-ready cross-platform Vue framework.",
+    "tag": "quasar",
     "officialSite": "https://quasar.dev",
     "codeRepository": "https://github.com/quasarframework/quasar",
     "runtime": ["Node.js"],
