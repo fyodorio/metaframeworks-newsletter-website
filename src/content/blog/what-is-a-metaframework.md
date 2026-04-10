@@ -36,6 +36,19 @@ Hence, while React is obviously the most popular way to build with metaframework
 
 ## Building blocks and peculiarities
 
+Looking at the examples above in deeper details one could derive several characteristic building blocks each of metaframeworks has in this form or another — starting from the left (_as in the "shift left" mantra, that is from a developer table_) to the right (_that is closer to the user of the resulting application or website_):
+
+- **Dev environment, build tooling, and other convenience utils.** Each metaframework creator strives to provide the best developer experience — blazing fast builds, comprehensive configuration, handy helper scripts or schematics, and whatnot. Usually you see the word "Rust" at that level a lot, and hopefully have some cool migrations that make your soul rest in peace between tooling updates.
+- **Runtime adapters for different platforms and deployment types.** Most of the metaframeworks allow you to deploy the resulting app (_which usually includes both front-end and back-end aspects with all the consequences_) anywhere from classic Node-based Docker containers to server workers and CDNs, depending on your needs and specifics. It has direct impact on your developer environment too and lots of aspects of CI/CD pipelines.
+- **Server layer (_API, middleware, server actions_).** Your best friend forever and backend for frontend simultaneously (_BFF_) — the part that makes the application full-stack at first place, serving it with access to external data and guardrails for that, among other important things.
+- **Data loading mechanisms and primitives.** This is probably the most versatile part for different tools (_and the favourite station of the hype train_), providing different internal data fetching composables, data loaders, server components (_heard of [RSC](https://metaframe.works/tags/rsc/), huh?_), caching utils, Suspense, and many more.
+- **Routing (_file-based, programmatic, or hybrid_) and navigation.** Quite opinionated layer, fluctuating between files and configs, client and server, and building the brittle equilibrium between the different parts of applications and websites.
+- **Rendering pipeline (_different modes_).** This is where the metaframeworks shine providing the sacramental flexibility of choosing between Server-Side Rendering (_SSR, well-known from classic Multi-Page Applications — MPAs_), Client-Side Rendering (_CSR, habitual for front-end developers who had build a lot of Single-Page Applications — SPAs_), Static Site Generation (_SSG, the simplest way to build a website without too much of interactivity or without JavaScript at all_), client and server "islands", and everything in between. Usually the merge of all these possibilities is what lets developers fly high and long with the least amount of organisational hassle.
+- **UI components and state management.** The framework part, obviously, with UI-framework-specific patterns and approaches, including the corresponding ecosystems of state management tools and utilities.
+- **Content and assets.** Useful helpers for working with images, fonts, Markdown files, and other different types of auxiliary data for website and web application building in performant way.
+
+Another important and somewhat metaphorical part of the metaframework construction site is _the tight coupling/glue_ between all the components providing slick permeable boundaries for application data and strong walls for security vulnerabilities simultaneously.
+
 ## Pros and cons
 
 ## Should you care
