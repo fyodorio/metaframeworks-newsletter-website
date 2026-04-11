@@ -101,3 +101,7 @@ While using or not using metaframeworks is largely subjective decision for any d
 So as you can see, even in each specific use case your own personal results may vary.
 
 ## Should you care
+
+Not that you have all the details about metaframeworks, their building blocks, pros and cons, specific examples and everything in between, I'm sure it will be easier to reason about using or not using these tools in your projects, as well as choosing a particular option matching your ideas the most suitable way. There's no silver bullet in web development and software development as a whole, so make sure these well-engineered hammers fit your awesome shiny nails. But if they do, I'm happy for you, as this world is a treasure trove of cool tools, practices, and people.
+
+If you feel excited about that and want to know more and follow the latest trends and greatest innovations in this area (_or vice versa, to know what to be afraid of and keep away from_), check out [the Metaframework Records newsletter](https://metaframe.works/), you may find a lot of carefully curated goodies there.
