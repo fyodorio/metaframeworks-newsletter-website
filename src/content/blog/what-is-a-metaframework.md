@@ -4,7 +4,28 @@ description: "Let's put it straight out of the gate."
 pubDate: "Apr 10 2026"
 published: true
 heroImage: "/blog-covers/what-is-a-metaframework.png"
-tags: ["nextjs", "nuxt", "sveltekit", "analog", "astro"]
+tags:
+  [
+    "nextjs",
+    "tanstack",
+    "remix",
+    "waku",
+    "nuxt",
+    "sveltekit",
+    "solidstart",
+    "fresh",
+    "analog",
+    "astro",
+    "vite",
+    "react",
+    "vue",
+    "angular",
+    "solid",
+    "svelte",
+    "preact",
+    "complexity",
+    "security"
+  ]
 ---
 
 Metaframework (_or meta framework, or meta-framework, — you do you_), being a generic therm by its nature, got the real adoption and popularity as a pattern in full-stack web development. It's nobody's surprise as JS and webdev industry is famous for giving birth to a new framework [on a daily basis](https://metaframe.works/tags/newborn/).
@@ -66,13 +87,13 @@ While using or not using metaframeworks is largely subjective decision for any d
 
 **On the negative side we see:**
 
-- **Lots of magic.**
-- **Generalization and necessity to follow the rules.**
-- **Complexity.**
-- **Nested dependencies.** => multiple potential vulnerabilities.
-- **Version migration and breaking changes.** (following the comparatively fast pace).
-- **Security holes at the intersection and middleware.** (there are even some dedicated specialized hackers!).
-- **Tight coupling of FE/BE and other glue code.**
+- **Complexity.** A metaframework is a complex contraption which tries to do a lot simultaneously and inside the boundaries of a single final goal — building a website or web application. This complexity comes with the cost of learning a lot and bearing the weight of multiple mental paradigms, not always straightforward, at least on an individual level.
+- **Lots of magic.** Metaframeworks obfuscate and abstract away a lot of stuff in the attempt to lower the complexity level for the users (_us, developers_), some of them less, trying to stick with native Web platform primitives and APIs, some of them more, confusingly hiding obvious things to cut away some boilerplate (_looking at you Nuxt!_). All in all, reading a code of a metaframework-based project for the first time can be a torture for a newcomer.
+- **Generalization and necessity to follow the rules.** There are usually pretty distinct boundaries of _what_ you can do and _how_ you can do it. Even with workarounds in mind (_it all is just HTML/CSS/JavaScript in the end_), one can have hard time implementing custom not specific-metaframework-friendly things.
+- **Nested dependencies.** As a metaframework is a compound mix of multiple tools and technologies, any changes/problems down the line multiply by the number of dependencies in your `package.json`, not to say about the statistical probability of compatibility issues in this pile of [often] independent packages.
+- **Version migration and breaking changes.** Taking into account quite fast pace of metaframework tooling development and updates, the necessity to update your supply chain may pop up with overwhelming frequency, and the corresponding awesome innovations may bring you a bunch of painful breaking changes from time to time.
+- **Security holes at the intersection and middleware.** Metaframework-based apps and websites being living full-stack web-facing entities, are prone to causing a lot of adversarial interest which is supplemented not only by a lot of possible conventional attack vectors (_server vulnerabilities, client-side template vulnerabilities_) but also by the brittle server-client boundary. Not surprisingly, it [falls victim](https://metaframe.works/tags/security/) to bounty hunts and threats most often, along with the corresponding metaframework-specific middleware. Well, there are even some [specialized hackers](https://zhero-web-sec.github.io/research-and-things/) with the deep metaframeworks focus!
+- **Tight coupling of front and back ends, and other glue code.**
 - **Cargo cult.**
 - **AI slop and bad code.**
 - **Performance tax.**
