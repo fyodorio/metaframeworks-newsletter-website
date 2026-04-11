@@ -1,0 +1,104 @@
+[
+  {
+    "id": "comparison",
+    "question": "What data is metaframeworks comparison built on?",
+    "answer": "At this stage, I had put into [the Metaframeworks Comparison table](/comparison) the list of metaframeworks (and metaframework-like tools) I had gathered [in the Encyclopedia of Metaframeworks](https://github.com/fyodorio/awesome-metaframeworks?tab=readme-ov-file#metaframeworks). The table consists both of the objective information (like websites and some technical stack parts) and of some subjective (and a bit opinionated, I accept that) facts and characteristics (like complexity or enterprise-readiness, for instance). I'm open to constructive criticism, corrections, and suggestions about that, as I consider this comparison to be a community-driven project. So feel free to [jump in](https://github.com/fyodorio/metaframeworks-newsletter-website/issues) and suggest anything, you are absolutely welcome!",
+    "featured": false
+  },
+  {
+    "id": "content-curation",
+    "question": "How do you curate the content?",
+    "answer": "My content curation process involves monitoring official blogs, social media accounts (BlueSky mostly), GitHub repositories (changelogs and releases), and community discussions (Reddit, HackerNews, etc.) of all major metaframeworks and tools around them. Sometimes I also create [my own content](https://fyodor.io) which relates to the metaframeworks ecosystem and refer to it in this case. The target topics mostly coincide with the chapters of [the Encyclopedia of Metaframeworks](https://github.com/fyodorio/awesome-metaframeworks). I prioritize official releases, significant updates, security advisories, and innovative community projects. The goal is to provide a balanced view of the ecosystem without bias toward any particular framework or tool, and even any rigid opinions on the metaframeworks approach in general, because the idea is consider it objectively with all the relevant cons and flaws included.",
+    "featured": false
+  },
+  {
+    "id": "how-many",
+    "question": "How many subscribers do you have?",
+    "answer": "Not so many, and at this stage I prefer being too humble to brag about it or hang up testimonial banners around 😅 But you can help me out and cheer me up by sharing a word with those who are interested in the topic 😉",
+    "featured": false
+  },
+  {
+    "id": "is-it-ai",
+    "question": "Is it all a huge pile of AI-generated slop or something?",
+    "answer": "No, every newsletter issue here is written by [yours truly](https://fyodor.io), humane as possible (at least for now 🤖). As I mention in the [About](/about) section though, I'm not a native English speaker (go try to stop my writing through that! 😅) so [I use AI](/ai-usage) for grammatical error corrections, punctuation consistency, and some stupidity control. But not more. The ideas and texts are mine, no matter how AI-level-dumb they sound sometimes.",
+    "featured": false
+  },
+  {
+    "id": "is-paid",
+    "question": "Is the newsletter paid, and if no — how is it monetized? Who pays for the party?",
+    "answer": "The newsletter is free, and I can confirm it will always be this way. That was one of the reasons of making it as minimalist and platform-agnostic as possible. I do not monetize anything here, as I don't like the way others do it. Luckily, I can afford making this enticing journey sustainable without sponsors for now. It also drastically helps to provide independent view on all the topics and tools and avoid bias. That said, if you (dis)like something in the way I emit the project message here, please [let me know](mailto:fyodor@metaframe.works), would be happy to hear any direct feedback.",
+    "featured": false
+  },
+  {
+    "id": "missed-issue",
+    "question": "What if I miss an issue?",
+    "answer": "Don't worry! All past newsletter issues are available on the [archive](/archive) page. You can browse through them at any time to catch up on metaframework news you might have missed.",
+    "featured": false
+  },
+  {
+    "id": "newsletter-frequency",
+    "question": "How often is the newsletter issued?",
+    "answer": "The newsletter is typically published fortnightly, on Thursdays (or Fridays), but please don't judge any random deviations to hard (_I'm only a human after all_). Usually, each issue contains a curated list of the most important metaframework news and updates from _the previous week_ (_or a couple of weeks_) but sometimes there can be some precious nuggets from the olden days if I consider them relevant and truly golden.",
+    "featured": false
+  },
+  {
+    "id": "no-memes",
+    "question": "Why there are no memes, or cat photos, or other pictures in the newsletter issues?",
+    "answer": "I'm a big fan of textual content personally and I truly believe there's no reason to put meaningless images everywhere just for the heck of it. It feels like making a selfie with some fountain or vase just because everyone else does. I love to put dad's jokes here and there though (as I'm a vivid dad ftw). And if I feel some day that there's a good place for a fancy chart or [a rare photo of Rich Harris](https://github.com/fyodorio/awesome-metaframeworks?tab=readme-ov-file#metaframework-heroes), or my own doodle — I'll definitely go for it. Otherwise, expect a lot of boring text with pinches of dumb humour and life anecdotes.",
+    "featured": false
+  },
+  {
+    "id": "platform",
+    "question": "Which newsletter platform do you use and why?",
+    "answer": "I use [ButtonDown](https://buttondown.com) (not an ad or affiliation). I found it the easiest, the most customizable (within the limits of default starter pricing), and very developer-friendly and minimalist way to build a newsletter on your website. I don't like shared stuff like SubStack or HashNode as they're too generic and focused on marketing, which is not the main goal of this project. Also I tried to get hands dirty with other alternatives and didn't like them too. So for now I'm pretty happy with my choice.",
+    "featured": false
+  },
+  {
+    "id": "rss",
+    "question": "Is there an RSS feed for the newsletter?",
+    "answer": "Yes, you can either insert [the website link](https://metaframe.works) to your RSS reader application of choice (_if it supports RSS autodetection_), or use [this traditional direct XML link](https://metaframe.works/rss.xml).",
+    "featured": true
+  },
+  {
+    "id": "song-names",
+    "question": "Why the issue titles sound so weird?",
+    "answer": "I use song names as issue titles to add a touch of creativity and fun to the newsletter. It's my way of making each issue unique and memorable. Usually, the chosen song, its title and a tagline are 100% relevant to the encompassing topic of the issue.",
+    "featured": true
+  },
+  {
+    "id": "structure",
+    "question": "What's the issue structure about? Is it always this weird good-bad-noteworthy chain or something?",
+    "answer": "Yes, the idea is to address a passed week of metaframeworks ecosystem life from the side of *Good* news, like new shiny releases, or awesome performant features and innovations, *Bad* news, which not always bad per se but might bring some thoughts about the obscure ways of metaframeworks and metaframework-based software or tooling around, and *Noteworthy* news and topics, which may or may not be huge or related to metaframeworks directly but obviously have something to do with the ecosystem. I have found that there's always something to say along these three lines of newsletter storytelling. Though I break the rules [from time to time](/archive/2).",
+    "featured": false
+  },
+  {
+    "id": "suggest-topics",
+    "question": "Can I suggest topics for future issues?",
+    "answer": "Absolutely! I welcome topic suggestions and any other ideas and thoughts from readers. Feel free to send them to [fyodor@metaframe.works](mailto:fyodor@metaframe.works), [my BlueSky](https://bsky.app/profile/fyodor.io), or reply directly to any newsletter issue, if you're subscribed. I genuinely value any input as it helps me cover the topics most relevant to the newsletter community.",
+    "featured": true
+  },
+  {
+    "id": "template",
+    "question": "I see it's built with Astro. May I steal your code to use it as a template?",
+    "answer": "[Feel free to](https://github.com/fyodorio/metaframeworks-newsletter-website), it's MIT-licensed. Would definitely appreciate attribution (and your further personal customization for uniqueness) though. I'm considering adding that to [the Astro themes list](https://astro.build/themes/) some day, when it's combed a bit better.",
+    "featured": false
+  },
+  {
+    "id": "ui",
+    "question": "Which UI library do you use for the website?",
+    "answer": "I don't use any. It' pure CSS which I like to use for styling on the Web the most.",
+    "featured": false
+  },
+  {
+    "id": "who",
+    "question": "Who are you the newsletter author again?",
+    "answer": "My name is *Fyodor* (which is by itself pretty unique so at some stage I had decided not to bother with a surname on the Internet). I'm a software engineer building web applications and web sites with metaframeworks and without them. I'f you're here reading the newsletter for some time you probably know the [backstory](https://dev.to/fyodorio/lets-talk-metaframeworks-2mkb) already. But TL;DR is that I truly believe metaframeworks are here to stay, either we like it or not, and I want to dig as deep as possible to get to know their mechanics better, be ready to possible surprises, and even just to humbly write their story. If you still fancy to know me better, start [here](https://fyodor.io/links).",
+    "featured": false
+  },
+  {
+    "id": "why-bother-anything-else",
+    "question": "Why there are some other pages here in addition to the issues archive itself? It's not how newsletters work!",
+    "answer": "The idea of this project is to not only share [the metaframeworks news](/archive), but also to learn and educate, to help people comprehend metaframeworks and ecosystem around them, and choose what is appropriate for them without any FOMO or unknowns-driven doubts. That's why there's [the Encyclopedia of Metaframeworks](https://github.com/fyodorio/awesome-metaframeworks), and [the Metaframeworks Comparison](/comparison), and many interesting thing more potentially. Stay tuned!",
+    "featured": false
+  }
+]

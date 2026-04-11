@@ -9,7 +9,10 @@ import FormattedDate from '../components/FormattedDate.astro';
 import { SITE_TITLE } from '../consts';
 import SubscriptionForm from '../components/SubscriptionForm.astro';
 
-type Props = CollectionEntry<'archive'>['data'];
+type Props = CollectionEntry<'archive'>['data'] & {
+  enableSubscription?: boolean;
+  'data-pagefind-ignore'?: boolean;
+};
 
 const {
   title,
@@ -79,8 +82,10 @@ const tagMap = Object.fromEntries(
           enableSubscription && (
             <section class="if-useful">
               <h5>
-                Found it useful? Consider subscribing. No hidden catch, no
-                strings attached.
+                <span>
+                  Found it useful? Consider subscribing to the newsletter.
+                </span>
+                <span>No hidden catch, no strings attached.</span>
               </h5>
               <SubscriptionForm />
             </section>
@@ -116,6 +121,9 @@ const tagMap = Object.fromEntries(
   }
   .if-useful h5 {
     font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
   @media (max-width: 720px) {
     main {

@@ -1,0 +1,22 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content';
+import { render } from 'astro:content';
+
+import Layout from '../../layouts/ContentNarrow.astro';
+
+export async function getStaticPaths() {
+  const issues = await getCollection('blog');
+  return issues.map((issue) => ({
+    params: { slug: issue.id },
+    props: issue
+  }));
+}
+type Props = CollectionEntry<'blog'>;
+
+const blogPost = Astro.props;
+const { Content } = await render(blogPost);
+---
+
+<Layout {...blogPost.data} enableSubscription data-pagefind-ignore>
+  <Content />
+</Layout>
