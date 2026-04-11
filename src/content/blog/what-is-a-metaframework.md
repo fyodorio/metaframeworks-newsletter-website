@@ -1,7 +1,7 @@
 ---
 title: "What Is a Metaframework"
-description: "Let's put it straight out of the gate."
-pubDate: "Apr 10 2026"
+description: "Let's put it straight out of the gate, with all the pros, cons, and how-to's."
+pubDate: "Apr 11 2026"
 published: true
 heroImage: "/blog-covers/what-is-a-metaframework.png"
 tags:
@@ -93,10 +93,10 @@ While using or not using metaframeworks is largely subjective decision for any d
 - **Nested dependencies.** As a metaframework is a compound mix of multiple tools and technologies, any changes/problems down the line multiply by the number of dependencies in your `package.json`, not to say about the statistical probability of compatibility issues in this pile of [often] independent packages.
 - **Version migration and breaking changes.** Taking into account quite fast pace of metaframework tooling development and updates, the necessity to update your supply chain may pop up with overwhelming frequency, and the corresponding awesome innovations may bring you a bunch of painful breaking changes from time to time.
 - **Security holes at the intersection and middleware.** Metaframework-based apps and websites being living full-stack web-facing entities, are prone to causing a lot of adversarial interest which is supplemented not only by a lot of possible conventional attack vectors (_server vulnerabilities, client-side template vulnerabilities_) but also by the brittle server-client boundary. Not surprisingly, it [falls victim](https://metaframe.works/tags/security/) to bounty hunts and threats most often, along with the corresponding metaframework-specific middleware. Well, there are even some [specialized hackers](https://zhero-web-sec.github.io/research-and-things/) with the deep metaframeworks focus!
-- **Tight coupling of front and back ends, and other glue code.**
-- **Cargo cult.**
-- **AI slop and bad code.**
-- **Performance tax.**
+- **Tight coupling of front and back ends, and other glue code.** When you come to the point of using a metaframework for your code, it is rarely the case that you can juggle the components interchangeably, you get what's in the box, and you get it tightly glued together. If playing with different building block is your thing, you probably better stay away of the integrated solutions like that.
+- **Cargo cult.** Metaframework aficionados and fanboys oftentimes truly believe there's only one correct way of building things for the web and this thing is their favourite tool. The blind faith does wonders and makes the ecosystem quality and diversity to deteriorate eventually until you start building simple marketing one-pagers with app-router-driven Next.js.
+- **AI slop and bad code.** Metaframeworks and Next.js in particular became a go-to tool for quickly scaffolding web apps and websites by AI coding assistants of different sorts. There's a lot of memes related to stupidity of blind YOLO'ing your development story with what the LLM tools give you by default but the fact is, the process is engaging and enticing, so we get a lot of web garbage in result (_largely as a consequence of multiple iterations over the same parts of code with deeply contaminated LLM context_).
+- **Performance tax.** As the metaframework ecosystem is quite complex and heavy, the code bloat is real and the unjustified using of unnecessarily sophisticated solutions brings in slow, clumsy, hardly-usable results. Of course, there are exceptions and possibilities for fine-tuning application performance, but still — if the laser-focused clockwork mechanics is your story, you probably better off using laser-focus solutions.
 
 So as you can see, even in each specific use case your own personal results may vary.
 
