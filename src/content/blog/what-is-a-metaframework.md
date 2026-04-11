@@ -51,4 +51,32 @@ Another important and somewhat metaphorical part of the metaframework constructi
 
 ## Pros and cons
 
+While using or not using metaframeworks is largely subjective decision for any developer, dictated by their industry experiences and PTSD, there are some distinct things (_from strictly technical to purely philosophical_) that can be used for a checkup if you're still hesitating. Try counting your "yay"s and "nay"s while imagining some dream web project you could build with metaframeworks.
+
+**On the positive side we have:**
+
+- **One-stop shop.** You stick with a single (_well, arguably, but still_) tool which provides you with out-of-the box solution and experience for building a website or webapp with everything you may need, as a baseline.
+- **Single technology for client and server parts.** By default (_even though there are definitely alternative decoupled one-sided implementation options_), you get a tool in a single programming language, with single set of utilities and patterns for developing both front end and back end of your project. That simplifies a lot, to say the least, and lowers the mental load of switching between technologies, also often giving seasoned frontend developers an easy entry to the world of back-end development.
+- **Best practices and team work.** Each metaframework ecosystem (_more often than not_) has its well-established standards, guidelines, and approaches to development which make switching between project for metaframework-specialized developers easy and streamlines onboarding and collaboration.
+- **Speed of development.** Metaframeworks do a lot of stuff for you and make it good, consistent, and robust. The only thing that lefts is to add your domain-specific logic and fly to them stars.
+- **Tangential innovation for the whole ecosystem.** Implementing different features and capabilities the metaframework authors are coming up with new robust approaches to different aspects of web development. Fine-grained reactivity is one of the great examples boosted by the metaframework era. The open-source metaframeworks projects (_especially in the Vite ecosystem_) often communicate and collaborate with each other, exchanging and borrowing ideas and improving the industry overall as a result.
+- **Hybrid rendering.** As opposed to classic web development approaches where you choose either you'll dance from a server or will tinker purely on the client side, with metaframeworks you can do both and even more. For instance, implement the landing page of your project with SSR to draw some dynamic data-driven insights quickly, add a blog to it with SSG for instant view loading, and develop a core interactive dashboard through an SPA for slick user experience. You can further adjust different parts and boundaries between them as needed and tune up performance with auxiliary technologies like islands or RSC.
+- **AI-friendliness.** Modern AI assistants are well-versed with metaframeworks (_especially Next.js, let's be frank, but in general too_) as opposed to, for instance, intricacies of providing more sophisticated insights for bespoke tooling contraptions. The benefit here is in integrated codebase analysis solutions for complex constructions with additional dedicated and laser-focused LLM helpers, MCPs, and "skills" from metaframework project vendors (_who know and respect the inevitability of proliferation of such tools_).
+- **Community.** Metaframeworks create following — both in terms of technical choices, and in terms of corresponding ecosystem of dedicated tools, starters, and everything that may help in developing versatile apps with rich functionality. There are conferences around them, well-organized and established groups of contributors and thought leaders, and just merely fans of the tech stack. You won't fail in finding a lot of like-minded people choosing one of the popular metaframework tools for your project.
+
+**On the negative side we see:**
+
+- **Lots of magic.**
+- **Generalization and necessity to follow the rules.**
+- **Complexity.**
+- **Nested dependencies.** => multiple potential vulnerabilities.
+- **Version migration and breaking changes.** (following the comparatively fast pace).
+- **Security holes at the intersection and middleware.** (there are even some dedicated specialized hackers!).
+- **Tight coupling of FE/BE and other glue code.**
+- **Cargo cult.**
+- **AI slop and bad code.**
+- **Performance tax.**
+
+So as you can see, even in each specific use case your own personal results may vary.
+
 ## Should you care
