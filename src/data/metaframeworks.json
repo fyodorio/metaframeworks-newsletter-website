@@ -527,6 +527,7 @@
     "id": "Vike",
     "name": "Vike",
     "description": "Flexible Vite-based web-app scaffolder framework.",
+    "tag": "vike",
     "officialSite": "https://vike.dev",
     "codeRepository": "https://github.com/vikejs/vike",
     "runtime": ["Node.js"],
