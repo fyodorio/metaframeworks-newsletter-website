@@ -230,6 +230,11 @@
     "description": "Using pure JavaScript and web standards without frameworks or libraries."
   },
   {
+    "id": "vike",
+    "name": "Vike",
+    "description": "Composable metaframework for creating advanced websites and web applications out of independent building blocks."
+  },
+  {
     "id": "vite",
     "name": "Vite",
     "description": "Next generation frontend tooling that's focused on speed and simplicity."
