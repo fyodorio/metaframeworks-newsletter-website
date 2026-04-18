@@ -61,5 +61,16 @@ const { title, description, image = '/default-cover.png' } = Astro.props;
   href={new URL('rss.xml', Astro.site)}
 />
 
+<!-- Structured data: site name for Google SERPs -->
+<script
+  type="application/ld+json"
+  set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: SITE_TITLE,
+    url: Astro.site?.toString()
+  })}
+/>
+
 <!-- Add view transitions -->
 <ClientRouter />
