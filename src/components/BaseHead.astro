@@ -63,6 +63,7 @@ const { title, description, image = '/default-cover.png' } = Astro.props;
 
 <!-- Structured data: site name for Google SERPs -->
 <script
+  is:inline
   type="application/ld+json"
   set:html={JSON.stringify({
     '@context': 'https://schema.org',

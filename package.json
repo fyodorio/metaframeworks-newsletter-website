@@ -1,7 +1,7 @@
 {
-  "name": "metaframeworks-newsletter-website",
+  "name": "metaframeworks-records",
   "type": "module",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "scripts": {
     "start": "npm run dev",
     "dev": "astro dev",
@@ -15,11 +15,11 @@
   },
   "dependencies": {
     "@astrojs/check": "0.9.9",
-    "@astrojs/mdx": "5.0.4",
+    "@astrojs/mdx": "5.0.6",
     "@astrojs/rss": "4.0.18",
     "@astrojs/sitemap": "3.7.2",
-    "astro": "6.2.2",
-    "astro-pagefind": "1.8.5",
+    "astro": "6.3.3",
+    "astro-pagefind": "1.8.6",
     "rehype-autolink-headings": "7.1.0",
     "rehype-raw": "7.0.0",
     "rehype-slug": "6.0.0",
@@ -27,15 +27,10 @@
     "remark": "15.0.1",
     "remark-gfm": "4.0.1",
     "remark-rehype": "11.1.2",
-    "typescript": "5.9.3"
+    "typescript": "6.0.3"
   },
   "devDependencies": {
-    "prettier": "3.6.2",
+    "prettier": "3.8.3",
     "prettier-plugin-astro": "0.14.1"
-  },
-  "overrides": {
-    "astro-pagefind": {
-      "astro": "^6.0.0"
-    }
   }
 }
