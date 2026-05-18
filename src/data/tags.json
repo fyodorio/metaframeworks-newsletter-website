@@ -253,5 +253,10 @@
     "id": "waku",
     "name": "Waku",
     "description": "Minimalist RSC-focused React framework."
+  },
+  {
+    "id": "wasp",
+    "name": "Wasp",
+    "description": "Rails-like framework for React, Node.js and Prisma."
   }
 ]
