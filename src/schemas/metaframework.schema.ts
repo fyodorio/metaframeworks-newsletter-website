@@ -7,6 +7,7 @@ export const metaframeworkSchema = z.object({
   officialSite: z.string(),
   codeRepository: z.string(),
   tag: z.string().optional(),
+  dead: z.boolean().optional(),
   runtime: z.array(
     z.enum(['Node.js', 'Deno', 'Bun', 'Serverless Functions', 'Edge compute'])
   ),
