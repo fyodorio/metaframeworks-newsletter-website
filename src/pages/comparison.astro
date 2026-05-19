@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 
 import WideLayout from '../layouts/ContentWide.astro';
+import RipBadge from '../components/RipBadge.astro';
 
 // Fetch the metaframeworks collection
 const metaframeworks = await getCollection('metaframeworks');
@@ -41,7 +42,8 @@ const getResultClass = (field: string, value: string) => {
 
 // Extract field names from the first entry (assuming all entries have the same structure)
 const fieldNames = Object.keys(metaframeworks[0]?.data || {}).filter(
-  (item) => item !== 'id' && item !== 'description' && item !== 'tag'
+  (item) =>
+    item !== 'id' && item !== 'description' && item !== 'tag' && item !== 'dead'
 );
 ---
 
@@ -77,12 +79,14 @@ const fieldNames = Object.keys(metaframeworks[0]?.data || {}).filter(
           }
         </tr>
       </thead>
+
       <tbody>
         {
           metaframeworks.map((framework) => (
             <tr>
               {fieldNames.map((field) => {
                 const value = framework.data[field];
+                const isName = field === 'name';
                 return (
                   <td class={getResultClass(field, value)}>
                     {Array.isArray(value) ? (
@@ -92,13 +96,14 @@ const fieldNames = Object.keys(metaframeworks[0]?.data || {}).filter(
                       <span
                         set:html={`<a href="${value}" target="_blank">${value}</a>`}
                       />
-                    ) : field === 'name' && framework.data.tag ? (
+                    ) : isName && framework.data.tag ? (
                       <span
                         set:html={`<a href="/tags/${framework.data.tag}">${value}</a>`}
                       />
                     ) : (
                       value
                     )}
+                    {isName && framework.data.dead && <RipBadge />}
                   </td>
                 );
               })}

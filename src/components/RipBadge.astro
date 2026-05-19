@@ -1,0 +1,32 @@
+---
+interface Props {
+  label?: string;
+}
+
+const { label = 'R.I.P.' } = Astro.props;
+---
+
+<span class="rip-badge" aria-label="No longer maintained">{label}</span>
+
+<style>
+  .rip-badge {
+    position: absolute;
+    right: -0.3em;
+    bottom: 0.6em;
+    display: inline-block;
+    padding: 0.15em 0.45em;
+    background-color: rgb(229, 231, 235);
+    color: rgb(var(--gray-dark));
+    border: 2px solid rgb(var(--gray-dark));
+    border-radius: 0;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    transform: rotate(-12deg);
+    transform-origin: center;
+    pointer-events: none;
+    z-index: 3;
+  }
+</style>
