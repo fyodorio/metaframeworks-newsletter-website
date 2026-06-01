@@ -140,6 +140,11 @@
     "description": "Web performance optimization, metrics, and techniques for building fast and efficient applications."
   },
   {
+    "id": "pracht",
+    "name": "Pracht",
+    "description": "Preact framework with explicit routing, per-route render modes, and thin adapters for Cloudflare, Vercel, and Node.js."
+  },
+  {
     "id": "preact",
     "name": "Preact",
     "description": "A fast 3kB alternative to React with the same modern API."
