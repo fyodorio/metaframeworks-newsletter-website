@@ -106,7 +106,6 @@ Key Prettier settings: single quotes, 2-space indent, no trailing commas, semico
 
 - British style English, American spelling (e.g. "color", "organize")
 - Sentence case for titles (capitalize first word and proper nouns only) except newsletter issue, blogpost, and page titles
-- En-dashes wrapped in spaces (`–`) instead of em-dashes
 - Oxford comma in lists of three or more items
 - Straight apostrophes (`'`), not curly
 - "metaframework" / "metaframeworks" — no hyphen, ever
@@ -123,8 +122,6 @@ Key Prettier settings: single quotes, 2-space indent, no trailing commas, semico
 - Use exact versions for all dependencies — no `^` or `~` prefixes
 - Install with `npm install <package>@X.Y.Z --save-exact`
 - Review and update dependencies intentionally; test thoroughly after updates
-- Document significant dependency updates in commit messages
-- Run `npm audit` regularly
 
 ## Development tips
 

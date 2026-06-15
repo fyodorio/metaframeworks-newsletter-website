@@ -1,7 +1,7 @@
 {
   "name": "metaframeworks-records",
   "type": "module",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "scripts": {
     "start": "npm run dev",
     "dev": "astro dev",
@@ -15,10 +15,10 @@
   },
   "dependencies": {
     "@astrojs/check": "0.9.9",
-    "@astrojs/mdx": "5.0.6",
+    "@astrojs/mdx": "6.0.3",
     "@astrojs/rss": "4.0.18",
-    "@astrojs/sitemap": "3.7.2",
-    "astro": "6.3.3",
+    "@astrojs/sitemap": "3.7.3",
+    "astro": "6.4.7",
     "astro-pagefind": "1.8.6",
     "rehype-autolink-headings": "7.1.0",
     "rehype-raw": "7.0.0",
