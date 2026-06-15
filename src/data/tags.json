@@ -95,6 +95,11 @@
     "description": "Tools that are gone or gonna be gone soon."
   },
   {
+    "id": "gridmix",
+    "name": "Gridsome / Gridmix",
+    "description": "Static site generator for Vue.js based on Webpack and GraphQL."
+  },
+  {
     "id": "hono",
     "name": "Hono",
     "description": "Full-stack framework starting from the server-side with static site generation, client components, and file-based routing."
