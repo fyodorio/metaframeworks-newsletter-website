@@ -101,7 +101,7 @@
   },
   {
     "id": "hono",
-    "name": "Hono",
+    "name": "Hono / HonoX",
     "description": "Full-stack framework starting from the server-side with static site generation, client components, and file-based routing."
   },
   {
