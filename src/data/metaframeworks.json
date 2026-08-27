@@ -259,6 +259,7 @@
     "id": "Meteor",
     "name": "Meteor",
     "description": "Frontend-agnostic opinionated full-stack framework.",
+    "tag": "meteor",
     "officialSite": "https://www.meteor.com",
     "codeRepository": "https://github.com/meteor/meteor",
     "runtime": ["Node.js"],
