@@ -117,7 +117,7 @@
   {
     "id": "meteor",
     "name": "Meteor",
-    "description": "Isomorphic, full-stack JavaScript and TypeScript platform."
+    "description": "Frontend-agnostic, isomorphic, full-stack JavaScript and TypeScript platform."
   },
   {
     "id": "newborn",
